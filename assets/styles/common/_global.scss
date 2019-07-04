@@ -1,0 +1,34 @@
+%message-shared {
+    text-transform: uppercase;
+}
+
+h5 {
+    @extend %message-shared;
+    font-weight: bold;
+}
+
+h4 {
+    @extend %message-shared;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    @extend %message-shared;
+}
+
+h3 {
+    @extend %message-shared;
+}
+
+i {
+    color: $white;
+}
+
+hr {
+    background-color: $white;
+    width: 90%;
+    margin: 2rem auto !important;
+}

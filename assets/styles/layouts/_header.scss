@@ -1,0 +1,71 @@
+%message-shared {
+    padding: 2rem;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.top-menu-container {
+    background-color: $top-menu-bg;
+}
+
+.top-menu {
+    width: 90%;
+    margin: 0 auto !important;
+    padding: 0;
+    @extend %message-shared;
+}
+
+.menu-item {
+    padding-right: 1rem;
+    display: inline-flex;
+
+    a {
+        color: $white;
+        font-size: 1rem;
+        text-transform: uppercase;
+    }
+
+}
+
+.logo-container {
+    background-color: $header-bg;
+}
+
+.logo-section {
+    margin: 0 auto !important;
+    width: 90%;
+    @extend %message-shared;
+}
+
+.main-menu {
+    position: absolute;
+    z-index: 999;
+    background-color: $white;
+    top: 160px;
+    left: 5%;
+    width: 90%;
+    text-align: left;
+}
+
+.main-menu-item {
+    a {
+        color: $black !important;
+
+    }
+}
+
+
+%color-shared {
+    color: $white;
+}
+
+.call-mail-menu {
+    h5 {
+        @extend %color-shared;
+    }
+
+    p {
+        @extend %color-shared;
+    }
+}

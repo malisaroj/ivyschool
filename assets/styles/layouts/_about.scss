@@ -1,0 +1,43 @@
+#about {
+    background-color: $about-bg;
+}
+
+.about-container {
+    margin: 0 auto !important;
+    width: 90%;
+
+    h4 {
+        font-weight: 600;
+        font-size: 4rem;
+        text-align: center;
+        text-transform: capitalize;
+        display: block !important;
+        padding-top: 6rem;
+    }
+
+    p {
+        font-weight: 300;
+        text-align: center;
+        padding: 2rem 0;
+        font-size: 1.5rem;
+        color: #a6a7a9;
+    }
+
+}
+
+.signe {
+    text-align: center;
+    padding: 5rem 0;
+
+    h6 {
+        text-transform: capitalize;
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    p {
+        font-size: 1.5rem;
+        color: #a6a7a9;
+    }
+
+}

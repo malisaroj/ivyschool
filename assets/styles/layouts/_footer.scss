@@ -1,0 +1,105 @@
+.copyright {
+    background-color: $copyright-bg;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    p {
+        color: $copyright-text;
+        text-transform: capitalize;
+        font-size: 16px;
+        margin: 0 auto !important;
+        width: 90%;
+
+    }
+
+}
+
+footer {
+    background-color: $footer-bg;
+}
+
+.footer-container {
+    width: 90%;
+    margin: 0 auto !important;
+}
+
+.footer-col {
+    p {
+        font-weight: 400;
+        font-size: 1.3rem;
+        padding: 2rem 0;
+    }
+
+    h5 {
+        font-weight: 700;
+
+    }
+
+}
+
+.footer-menu {
+    a {
+        font-weight: 400;
+        color: $copyright-text;
+        padding: 1rem;
+        font-size: 1.3rem;
+    }
+
+}
+
+.footer-side {
+    background-color: $header-bg;
+}
+
+#logo-school {
+    height: auto;
+    width: 100px;
+}
+
+.contact-footer {
+    background-color: $footer-contact-bg;
+}
+
+.contact-logo {
+    padding-left: 1rem;
+
+    img {
+        width: 75px;
+        height: auto;
+        margin-right: 3rem !important;
+    }
+
+}
+
+.footer-call {
+    h4 {
+        font-weight: 700;
+        font-size: 1.3rem;
+        color: $white;
+    }
+
+    p {
+        font-weight: 300;
+        font-size: 1.3rem;
+        color: $white;
+        padding-left: 5px;
+    }
+
+}
+
+
+
+.footer-contact {
+    h5 {
+        font-weight: 700;
+        font-size: 1.3rem;
+        color: $white;
+    }
+
+    p {
+        font-weight: 300;
+        font-size: 1.3rem;
+        color: $white;
+        padding-left: 5px;
+    }
+}

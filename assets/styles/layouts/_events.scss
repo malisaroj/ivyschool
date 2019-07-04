@@ -1,0 +1,67 @@
+#events {
+    padding: 7rem 0;
+    width: 90%;
+    margin: 0 auto !important;
+}
+
+.events-text {
+    h4 {
+        font-weight: 600;
+        font-size: 2rem;
+        display: block !important;
+        text-align: left;
+        padding: 0;
+    }
+
+    p {
+        font-weight: 300;
+        text-align: left;
+        text-transform: capitalize;
+        font-size: 1.3rem;
+        color: #a6a7a9;
+        padding: 5px 0;
+    }
+
+    h6 {
+        font-weight: 600;
+        text-transform: uppercase;
+        text-align: left;
+        font-size: 1.3rem;
+    }
+
+}
+
+.events-img {
+    padding: 4px 0;
+}
+
+.events-schedule {
+    background-color: #4f59b6;
+    border-radius: 5px;
+
+    h4 {
+        font-weight: 600;
+        font-size: 1.3rem;
+        color: $white;
+        text-transform: capitalize;
+    }
+
+    p {
+        font-weight: 300;
+        color: $white;
+        text-align: start;
+    }
+
+    h5 {
+        color: $white;
+
+    }
+
+}
+
+p {
+    span {
+        padding: 20px;
+
+    }
+}
