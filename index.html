@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ivy School</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
@@ -39,30 +40,30 @@
                         <img src="assets/img/logo-home3-1.png" alt="">
                     </div>
 
-
-                    <div class="contact-info">
-                        <div class="row">
-                            <div class="col">
-                                <a href="#"> <i class="fa fa-phone" aria-hidden="true"></i></a>
-                            </div>
-                            <div class="col call-mail-menu">
-                                <h5>call us</h5>
-                                <p>977 9849451411</p>
-                            </div>
+                    <div class="row contact-info">
+                        <div class="logo-menu-icon">
+                            <a href="#"> <i class="fa fa-phone" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="call-mail-menu">
+                            <h5>call us</h5>
+                            <p>977 9849451411</p>
                         </div>
                     </div>
 
 
-                    <div class="contact-info">
-                        <div class="row">
-                            <div class="col">
-                                <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-                            </div>
-                            <div class="col call-mail-menu">
-                                <h5>email</h5>
-                                <p>infoemail@gmail.com</p>
-                            </div>
+                    <div class="row contact-info">
+                        <div class="logo-menu-icon">
+                            <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
                         </div>
+                        <div class="call-mail-menu">
+                            <h5>email</h5>
+                            <p>infoemail@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="mobile-nav">
+                        <a class="logo-menu-icon" href="javascript:void(0);"><i class="fa fa-bars"
+                                aria-hidden="true"></i></a>
                     </div>
                 </div>
             </div>
@@ -72,12 +73,25 @@
                 <ul class="menu-item">
                     <li class="main-menu-item"><a href="#">home</a></li>
                     <li class="main-menu-item"><a href="#">about</a></li>
-                    <li class="main-menu-item"><a href="#">courses</a></li>
+                    <li class="dropdown main-menu-item">
+                        <a href="javascript:void(0)" class="dropbtn">courses <i class="fa fa-caret-down"
+                                aria-hidden="true"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                    </li>
                     <li class="main-menu-item"><a href="#">events</a></li>
                     <li class="main-menu-item"><a href="#">notifications</a></li>
                     <li class="main-menu-item"><a href="#">contact</a></li>
                 </ul>
+                <ul class="menu-item">
+                    <li class="main-menu-item"><a class="menu-icon" href="#"><i class="fa fa-search"
+                                aria-hidden="true"></i></a></li>
+                </ul>
             </div>
+
 
 
 
@@ -102,7 +116,7 @@
 
         <section id="feature">
             <div class="row">
-                <div class="col-3 feature-container">
+                <div class="col-12 col-xl-3 col-lg-6 col-md-6 feature-container">
                     <img src="assets/img/Back4.png" alt="">
                     <div class="feature-text">
                         <h4>Best Teacher</h4>
@@ -110,7 +124,7 @@
                     </div>
                 </div>
 
-                <div class="col-3 feature-container">
+                <div class="col-12 col-xl-3 col-lg-6 col-md-6 feature-container">
                     <img src="assets/img/Back3.png" alt="">
                     <div class="feature-text">
                         <h4>Latest Courses</h4>
@@ -119,7 +133,7 @@
                     </div>
                 </div>
 
-                <div class="col-3 feature-container">
+                <div class="col-12 col-xl-3 col-lg-6 col-md-6 feature-container">
                     <img src="assets/img/Back2.png" alt="">
                     <div class="feature-text">
                         <h4>Home environment</h4>
@@ -128,7 +142,7 @@
 
 
                 </div>
-                <div class="col-3 feature-container">
+                <div class="col-12 col-xl-3 col-lg-6 col-md-6 feature-container">
                     <img src="assets/img/Back.png" alt="">
                     <div class="feature-text">
                         <h4>National Sports</h4>
@@ -166,9 +180,9 @@
 
         <section id="events">
             <div class="row">
-                <div class="col-8">
+                <div class="col-12 col-xl-8 col-lg-8 col-md-12">
                     <div class="row">
-                        <div class="col events-text">
+                        <div class="col-12 col-xl-6 col-lg-6 col-md-6 events-text">
                             <h4>2018 Parent's Day</h4>
                             <p>Jan 18, 2018</p>
                             <p>Convinently orchestrate magnetic collaboration and idea-sharing without performance based
@@ -180,14 +194,14 @@
                             </p>
                             <h6>read more</h6>
                         </div>
-                        <div class="col events-img">
+                        <div class="col-12 col-xl-6 col-lg-6 col-md-6 events-img">
                             <img src="assets/img/imgContainer.png" alt="">
 
                         </div>
                     </div>
 
                     <div class="row">
-                        <div class="col events-text">
+                        <div class="col-12 col-xl-6 col-lg-6 col-md-6 events-text">
                             <h4>2018 School Day</h4>
                             <p>Jan 18, 2018</p>
                             <p>Convinently orchestrate magnetic collaboration and idea-sharing without performance based
@@ -199,14 +213,14 @@
                             </p>
                             <h6>read more</h6>
                         </div>
-                        <div class="col events-img">
+                        <div class="col-12 col-xl-6 col-lg-6 col-md-6 events-img">
                             <img src="assets/img/imgContainer1.png" alt="">
                         </div>
                     </div>
                 </div>
 
 
-                <div class="col-4 events-schedule">
+                <div class="col-12 col-xl-4 col-lg-4 col-md-12 events-schedule">
                     <h4>Various versions have evolved over the years</h4>
                     <p>
                         <span>June 1 2019</span>
@@ -235,7 +249,7 @@
             <div class="testimonial-container">
                 <h4>Testimonial</h4>
                 <div class="row">
-                    <div class="col-4">
+                    <div class="col-12 col-xl-4 col-lg-12 col-md-12">
                         <div class="testimonial-text">
                             <p>
                                 I really appereciate the awesome job this team does! In friendly tone and highly
@@ -250,7 +264,7 @@
                     </div>
 
 
-                    <div class="col-4">
+                    <div class="col-12 col-xl-4 col-lg-12 col-md-12">
                         <div class="testimonial-text">
                             <p>
                                 The theme is very beautifully developed;
@@ -269,7 +283,7 @@
 
 
                     </div>
-                    <div class="col-4">
+                    <div class="col-12 col-xl-4 col-lg-12 col-md-12">
                         <div class="testimonial-text">
                             <p>
                                 I chosen teh EUDMA theme after lot of search and i wasn't wrong the theme is
@@ -291,7 +305,7 @@
 
         <section id="news">
             <div class="row news-container">
-                <div class="col-4 news-update">
+                <div class="col-12 col-xl-4 col-lg-6 col-md-6 news-update">
                     <img src="assets/img/Rectangle 5 copy.png" alt="">
                     <div class="news-text">
                         <h4>Opening The Throat Chakra: How Expressing</h4>
@@ -303,7 +317,7 @@
 
                 </div>
 
-                <div class="col-4 news-update">
+                <div class="col-12 col-xl-4 col-lg-6 col-md-6 news-update">
                     <img src="assets/img/Rectangle 5.png" alt="">
                     <div class="news-text">
                         <h4>Computer training and Assembly</h4>
@@ -315,7 +329,7 @@
 
                 </div>
 
-                <div class="col-4">
+                <div class="col-12 col-xl-4 col-lg-12 col-md-12">
                     <div class="blog">
                         <h4>International School summit</h4>
                         <p>Interactively scale team building</p>
@@ -361,20 +375,18 @@
                     </div>
                 </div>
             </div>
-
-
         </section>
 
         <footer>
             <div class="row footer-container">
-                <div class="col-4 footer-col">
+                <div class="col-12 col-xl-4 col-lg-4 col-md-6 footer-col">
                     <img src="assets/img/logo-footer.png" alt="logo" id="logo-school">
                     <p>Interactively scale team builiding testing procedures visavis cost effective human capital.
                         Energistically synthesize resource levelling process improvments.
                     </p>
                     <button class="btn btn-primary"><a href="#">Learn More About Us ></a></button>
                 </div>
-                <div class="col-4 footer-col">
+                <div class="col-4 footer-col footer-menu-container">
                     <h5>about school</h5>
                     <div class="row">
                         <div class="col-6">
@@ -404,14 +416,16 @@
                         <img src="assets/img/logo.png" alt="IIMS Logo">
                     </div>
                 </div>
-                <div class="col-4 footer-side">
+                <div class="col-12 col-xl-4 col-lg-4 col-md-6 footer-side">
                     <div class="row">
-                        <div class="col-4">
-                            <i class="fa fa-phone" aria-hidden="true"></i>
-                        </div>
-                        <div class="col-8 footer-call">
-                            <h4>call us</h4>
-                            <p>977 9849451411</p>
+                        <div class="row contact-info">
+                            <div class="icons">
+                                <a href="#" class="footer-icon"> <i class="fa fa-phone" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="call-mail-menu">
+                                <h5>call us</h5>
+                                <p>977 9849451411</p>
+                            </div>
                         </div>
                     </div>
 
@@ -439,6 +453,7 @@
     </div>
     <script src="assets/js/jquery.js"></script>
     <script src="assets/bootstrap/js/bootstrap.js"></script>
+    <script src="assets/js/main.js"></script>
 
 </body>
 

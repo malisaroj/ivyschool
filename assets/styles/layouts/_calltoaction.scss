@@ -4,17 +4,31 @@
     padding: 20px;
     background-color: $ad-bg;
     border-radius: 5px;
+
+    @media screen and (max-width: $breakpoint-phone) {
+        display: none;
+
+    }
 }
 
 .action-intro {
     color: $white;
     font-weight: 600;
     font-size: 2rem;
+
+    @media screen and (max-width: $breakpoint-tablet) {
+        font-size: 1.4rem;
+    }
 }
 
 %button-shared {
     padding: 0 30px !important;
     border-radius: 40px !important;
+
+    @media screen and (max-width: $breakpoint-tablet) {
+        padding: 0 !important;
+        border-radius: 30px !important;
+    }
 }
 
 .btn-light {

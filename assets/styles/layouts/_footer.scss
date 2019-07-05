@@ -21,9 +21,23 @@ footer {
 .footer-container {
     width: 90%;
     margin: 0 auto !important;
+
+    @media screen and (max-width: $breakpoint-desktop) {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+
+    }
+
+    @media screen and (max-width: $breakpoint-phone) {
+        display: block;
+
+    }
 }
 
 .footer-col {
+    padding: 7rem 0;
+
     p {
         font-weight: 400;
         font-size: 1.3rem;
@@ -32,9 +46,14 @@ footer {
 
     h5 {
         font-weight: 700;
+    }
+}
+
+.footer-menu-container {
+    @media screen and (max-width: $breakpoint-phone) {
+        display: none;
 
     }
-
 }
 
 .footer-menu {
@@ -43,12 +62,23 @@ footer {
         color: $copyright-text;
         padding: 1rem;
         font-size: 1.3rem;
+
+
+    }
+    a:hover {
+        background-color: $white;
+
     }
 
 }
 
 .footer-side {
+    padding: 7rem 0;
     background-color: $header-bg;
+
+    @media screen and (max-width: $breakpoint-desktop) {
+        display: none;
+    }
 }
 
 #logo-school {
@@ -64,10 +94,18 @@ footer {
     padding-left: 1rem;
 
     img {
-        width: 75px;
-        height: auto;
-        margin-right: 3rem !important;
+        margin-right: 2rem !important;
+
+        @media screen and (max-width: $breakpoint-desktop) {
+            margin-right: 0 !important;
+        }
+
+        @media screen and (max-width: $breakpoint-tablet) {
+            width: auto;
+            height: 40px;
+        }
     }
+
 
 }
 
@@ -90,16 +128,28 @@ footer {
 
 
 .footer-contact {
+
     h5 {
+        display: block !important;
         font-weight: 700;
         font-size: 1.3rem;
         color: $white;
+        padding-left: 0px;
+        width: 90%;
+        margin: 0 auto !important;
     }
 
     p {
         font-weight: 300;
         font-size: 1.3rem;
         color: $white;
-        padding-left: 5px;
+        width: 90%;
+        margin: 0 auto !important;
+    }
+}
+
+.footer-icon {
+    i {
+        font-size: 3rem;
     }
 }

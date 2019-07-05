@@ -7,6 +7,10 @@
 
 .top-menu-container {
     background-color: $top-menu-bg;
+
+    @media screen and (max-width: $breakpoint-phone) {
+        display: none;
+    }
 }
 
 .top-menu {
@@ -26,6 +30,10 @@
         text-transform: uppercase;
     }
 
+    @media screen and (max-width: $breakpoint-phone) {
+        display: block;       
+    }
+
 }
 
 .logo-container {
@@ -35,23 +43,38 @@
 .logo-section {
     margin: 0 auto !important;
     width: 90%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
     @extend %message-shared;
+
+    @media screen and (max-width: $breakpoint-phone) {
+        position: relative;
+    }
 }
 
 .main-menu {
     position: absolute;
     z-index: 999;
     background-color: $white;
-    top: 160px;
+    top: 140px;
     left: 5%;
     width: 90%;
     text-align: left;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+
+    @media screen and (max-width: $breakpoint-phone) {
+        display: none;
+        z-index: 99999;
+        top: 105px;
+    }
 }
 
 .main-menu-item {
     a {
         color: $black !important;
-
     }
 }
 
@@ -67,5 +90,93 @@
 
     p {
         @extend %color-shared;
+    }
+}
+
+.menu-icon {
+    i {
+        color: $black;
+    }
+
+}
+
+.contact-info {
+    @media screen and (max-width: $breakpoint-phone) {
+        display: none;
+    }
+}
+
+li a,
+.dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover,
+.dropdown:hover .dropbtn {
+    background-color: $copyright-text;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropbtn {
+    i {
+        color: $black;
+    }
+}
+
+.menu-icon {
+    a {
+        background-color: $top-menu-bg;
+        border-radius: 5px;
+        margin: -1rem !important;
+    }
+}
+
+.logo-menu-icon {
+    i {
+        color: $white;
+    }
+
+}
+
+.mobile-nav {
+    display: none;
+    @media screen and (max-width: $breakpoint-phone) {
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+
     }
 }

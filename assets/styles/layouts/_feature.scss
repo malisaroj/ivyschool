@@ -5,6 +5,15 @@
 
 .feature-container {
     position: relative;
+
+    @media screen and (max-width: $breakpoint-desktop) {
+        margin: 2rem 0 !important;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
 }
 
 .feature-text {
