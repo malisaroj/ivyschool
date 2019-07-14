@@ -8,10 +8,9 @@
         text-transform: capitalize;
         font-size: 16px;
         margin: 0 auto !important;
-        width: 90%;
+        width: 80%;
 
     }
-
 }
 
 footer {
@@ -19,7 +18,8 @@ footer {
 }
 
 .footer-container {
-    width: 90%;
+    width: 80%;
+    height: 430px;
     margin: 0 auto !important;
 
     @media screen and (max-width: $breakpoint-desktop) {
@@ -65,6 +65,7 @@ footer {
 
 
     }
+
     a:hover {
         background-color: $white;
 
@@ -73,11 +74,17 @@ footer {
 }
 
 .footer-side {
-    padding: 7rem 0;
+    padding-top: 53px;
     background-color: $header-bg;
+    height: 430px;
+    width: 360px;
 
     @media screen and (max-width: $breakpoint-desktop) {
         display: none;
+    }
+
+    .contact-info {
+        padding-left: 85px;
     }
 }
 
@@ -110,32 +117,30 @@ footer {
 }
 
 .footer-call {
-    h4 {
-        font-weight: 700;
-        font-size: 1.3rem;
-        color: $white;
-    }
+    line-height: 1;
 
-    p {
-        font-weight: 300;
-        font-size: 1.3rem;
-        color: $white;
-        padding-left: 5px;
-    }
+    span {
 
+        font-size: 19px;
+        font-weight: 400;
+        color: $white;
+        h6 {
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 2rem;
+            color: $white;
+        }
+    }
 }
 
-
-
 .footer-contact {
-
     h5 {
         display: block !important;
         font-weight: 700;
         font-size: 1.3rem;
         color: $white;
         padding-left: 0px;
-        width: 90%;
+        width: 80%;
         margin: 0 auto !important;
     }
 
@@ -143,7 +148,7 @@ footer {
         font-weight: 300;
         font-size: 1.3rem;
         color: $white;
-        width: 90%;
+        width: 80%;
         margin: 0 auto !important;
     }
 }

@@ -5,8 +5,13 @@
     justify-content: space-between;
 }
 
+header {
+    height: 250px;
+}
+
 .top-menu-container {
     background-color: $top-menu-bg;
+    height: 60px;
 
     @media screen and (max-width: $breakpoint-phone) {
         display: none;
@@ -14,38 +19,29 @@
 }
 
 .top-menu {
-    width: 90%;
+    width: 80%;
     margin: 0 auto !important;
     padding: 0;
     @extend %message-shared;
-}
 
-.menu-item {
-    padding-right: 1rem;
-    display: inline-flex;
-
-    a {
-        color: $white;
-        font-size: 1rem;
-        text-transform: uppercase;
+    .top-menu-right {
+        ul {
+            display: inline-flex;
+        }
     }
-
-    @media screen and (max-width: $breakpoint-phone) {
-        display: block;       
-    }
-
 }
 
 .logo-container {
     background-color: $header-bg;
+    height: 190px;
 }
 
 .logo-section {
     margin: 0 auto !important;
-    width: 90%;
+    width: 80%;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    padding-top: 33px;
     @extend %message-shared;
 
     @media screen and (max-width: $breakpoint-phone) {
@@ -57,26 +53,54 @@
     position: absolute;
     z-index: 999;
     background-color: $white;
-    top: 140px;
-    left: 5%;
-    width: 90%;
+    top: 197px;
+    left: 10%;
+    width: 80%;
+    height: 90px;
     text-align: left;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+    border-radius: 5px;
 
     @media screen and (max-width: $breakpoint-phone) {
         display: none;
         z-index: 99999;
         top: 105px;
     }
-}
 
-.main-menu-item {
-    a {
-        color: $black !important;
+    .menu-item {
+        padding-top: 20px;
+        display: inline-flex;
+
+            
+        a {
+            color: $white;
+            font-size: 32px;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+    
+        @media screen and (max-width: $breakpoint-phone) {
+            display: block;
+        }
+
+        .main-menu-item {
+            a {
+                color: $text-color !important;
+                font-weight: 600;
+                font-size: 40px;
+            }
+
+            i {
+                color: $text-color !important;
+            }
+        }
+
+
     }
 }
+
 
 
 %color-shared {
@@ -84,13 +108,21 @@
 }
 
 .call-mail-menu {
-    h5 {
-        @extend %color-shared;
-    }
+    line-height: 1;
+    padding-top: 1rem;
 
     p {
         @extend %color-shared;
+        font-weight: 600;
+        text-transform: uppercase;
     }
+
+    span {
+        color: $white;
+        text-transform: lowercase;
+        font-size: 1.3rem;
+    }
+
 }
 
 .menu-icon {
@@ -101,8 +133,23 @@
 }
 
 .contact-info {
+    display: inline-flex;
     @media screen and (max-width: $breakpoint-phone) {
         display: none;
+    }
+
+    .row {
+        padding-right: 2rem;
+    }
+
+    .logo-menu-icon {
+        i {
+            color: $white;
+            background-color: #777fc9;
+            padding: 5px;
+            text-align: center;
+            border-radius: 2px;
+        }
     }
 }
 
@@ -155,23 +202,9 @@ li.dropdown {
     }
 }
 
-.menu-icon {
-    a {
-        background-color: $top-menu-bg;
-        border-radius: 5px;
-        margin: -1rem !important;
-    }
-}
-
-.logo-menu-icon {
-    i {
-        color: $white;
-    }
-
-}
-
 .mobile-nav {
     display: none;
+
     @media screen and (max-width: $breakpoint-phone) {
         display: block;
         position: absolute;

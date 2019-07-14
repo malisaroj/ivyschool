@@ -1,6 +1,6 @@
 .banner-text {
     position: absolute;
-    left: 200px;
+    left: 150px;
     top: 130px;
     z-index: 999;
 
@@ -26,6 +26,8 @@
         font-size: 2rem;
         color: gray;
         margin-bottom: -2rem !important;
+        padding-left: 0;
+
 
         @media screen and (max-width: $breakpoint-phone) {
             font-size: 1rem;
@@ -38,6 +40,7 @@
         text-align: left;
         margin-bottom: 30px !important;
         font-size: 1.2rem;
+        color: $text-color;
 
         @media screen and (max-width: $breakpoint-tablet) {
             margin-bottom: 13px !important;

@@ -1,43 +1,338 @@
-#about {
-    background-color: $about-bg;
+#about-header {
+    background-image: url("../../assets/img/bg-10.jpg");
+    position: relative;
+    height: 300px;
+
+    .page-title-container {
+        background-color: rgba(17, 17, 17, 0.75);
+        height: 300px;
+        width: 100%;
+    }
 }
 
-.about-container {
-    margin: 0 auto !important;
-    width: 90%;
+.menu-container {
+    .container {
+        padding: 1rem !important;
+    }
+}
 
-    h4 {
+.page-title {
+    position: absolute;
+    top: 150px;
+    left: 170px;
+
+    @media screen and (max-width: $breakpoint-phone) {
+        text-align: center;
+        padding: 100px 0;
+        position: unset;
+    }
+
+    h2 {
+        color: $white;
         font-weight: 600;
         font-size: 4rem;
-        text-align: center;
-        text-transform: capitalize;
-        display: block !important;
-        padding-top: 6rem;
+        padding-bottom: 2rem;
+
     }
 
     p {
-        font-weight: 300;
+        color: $white;
+        font-weight: 400;
+        font-size: 2rem;
+        text-transform: uppercase
+    }
+}
+
+.container {
+    padding: 7rem 0;
+
+}
+
+.about-menu {
+    padding: 7rem 0;
+    @media screen  and (max-width: $breakpoint-phone){
+        padding: 0;
+    }
+
+    .about-menu-item {
+        display: block;
+        list-style: circle !important;
+        color: $black;
+    }
+}
+
+.about-menu-item {
+    a {
+        color: $black;
+        font-size: 2rem;
+        font-weight: 600;
+
+    }
+}
+
+.menu-item {
+    a {
+        font-weight: 400;
+        font-size: 1.2rem !important;
+    }
+
+    i {
+        color: $white;
+    }
+}
+
+
+.about-text {
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: $copyright-text;
+    padding: 7rem 0;
+}
+
+.message {
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding: 7rem 0;
+}
+
+#tweets {
+    background-image: url("../../assets/img/backgorund-twiteer_min.jpg");
+    margin-top: 20rem !important;
+
+    @media screen and (max-width: $breakpoint-phone) {
+        margin-top: 90rem !important;
+    }
+
+    .tweet-container {
+        background-color: rgba(17, 17, 17, 0.75);
+        height: 400px;
+        width: 100%;
+
+    }
+}
+
+.icon-box {
+    height: 300px;
+    text-align: center;
+    padding: 100px 0;
+
+    h2 {
+        color: $white;
+        font-weight: 700;
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        padding-top: 2rem;
+    }
+}
+
+#portfolio {
+    background-color: rgba(17, 17, 17, 0.75);
+    z-index: 999;
+    padding-top: 7rem;
+
+    h2 {
+        color: $white;
         text-align: center;
-        padding: 2rem 0;
-        font-size: 1.5rem;
-        color: #a6a7a9;
+        font-weight: 700;
+        font-size: 4rem;
+        padding-top: 7rem;
+
+    }
+}
+
+.portfolio-img {
+    width: 250px !important;
+}
+
+.portfolio-container {
+    background-color: $white;
+    margin: 10px !important;
+    height: 380px;
+
+    @media screen  and (max-width: $breakpoint-desktop){
+        height: 420px;
+    }
+
+    @media screen  and (max-width: $breakpoint-tablet){
+        height: 465px;
+    }
+    @media screen and (max-width: $breakpoint-phone) {
+        height: 500px;
+    }
+
+    img {
+        width: 100% !important;
+    }
+
+    h4 {
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 400;
+        display: block
+    }
+
+    p {
+        text-align: center;
+        color: $text-color;
+        font-size: 1.6rem;
+        font-weight: 400;
+    }
+}
+
+#tweets {
+    position: relative;
+
+}
+
+.icon-container {
+    position: absolute;
+    left: 100px;
+    top: -228px;
+    z-index: 999;
+
+    @media screen and (max-width: $breakpoint-desktop) {
+        left: 33px;
+    }
+
+    @media screen and (max-width: $breakpoint-tablet) {
+        left: 25px;
+
+    }
+
+    @media screen and (max-width: $breakpoint-phone) {
+        left: 0px;
+        top: -970px;
+
     }
 
 }
 
-.signe {
+.counter-box {
     text-align: center;
-    padding: 5rem 0;
+
+    @media screen  and (max-width: $breakpoint-phone) {
+        padding-bottom: 5rem;
+    }
+
+    h1 {
+        color: #0073bb;
+        font-size: 100px;
+        font-weight: 700;
+        margin: 0px 0px 5px 0px;
+        @media screen  and (max-width: $breakpoint-tablet) {
+            font-size: 85px;
+        }
+    }
 
     h6 {
-        text-transform: capitalize;
-        font-size: 2rem;
-        font-weight: 600;
+        font-size: 1.6rem;
+        font-weight: 400;
+        padding: 1rem 0;
     }
 
     p {
-        font-size: 1.5rem;
-        color: #a6a7a9;
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: $text-color;
+    }
+}
+
+.tweet-feed {
+    padding-top: 150px;
+    text-align: center;
+
+    @media screen and (max-width: $breakpoint-phone) {
+        padding-top: 0;
     }
 
+    i {
+        font-size: 3rem;
+        padding: 3rem 0;
+
+    }
+
+    p {
+
+        color: $white;
+        font-size: 2rem;
+    }
+
+
+}
+
+#certificate-carousel {
+    padding-top: 10rem;
+
+    p {
+        font-size: 1.6rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: $text-color;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 4rem;
+        font-weight: 700;
+        text-transform: capitalize;
+        color: $black;
+        text-align: center;
+
+    }
+}
+
+.img-container {
+    img {
+        width: 100%;
+        height: 186px;
+        object-fit: cover;
+
+        @media screen and (max-width: $breakpoint-desktop) {
+            height: 150px;
+
+        }
+    }
+}
+
+.lg-img-container {
+    img {
+        width: 100%;
+        height: auto;
+
+        
+        @media screen and (max-width: $breakpoint-tablet) {
+            height: 320px;
+            object-fit: cover;
+        }
+
+        @media screen and (max-width: $breakpoint-phone) {
+            padding-bottom: 3rem;
+        }
+    }
+
+}
+
+.testimonial-content {
+    text-align: center;
+
+
+    .content {
+        color: $text-color;
+        font-size: 2rem;
+        font-weight: 400;
+    }
+
+    .author {
+        span {
+            color: $header-bg;
+            font-size: 2rem;
+            font-weight: 400;
+
+        }
+    }
+
+}
+
+.custom-row {
+    margin-bottom: 2rem !important;
 }

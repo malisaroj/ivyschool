@@ -2,15 +2,14 @@
 
 /* Import theme styles */
 @import "common/global";
+@import "layouts/home";
 @import "layouts/header";
 @import "layouts/footer";
 @import "layouts/body";
+@import "layouts/banner";
 @import "layouts/about";
 @import "layouts/events";
-@import "layouts/feature";
-@import "layouts/banner";
-@import "layouts/testimonial";
-@import "layouts/news";
-@import "layouts/calltoaction";
+@import "layouts/contact";
+@import "layouts/services";
 @import "components/buttons";
 @import "mixins/mixins";
