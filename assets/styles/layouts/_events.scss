@@ -20,6 +20,8 @@
     font-size: 1.6rem;
     text-transform: uppercase;
     text-align: center;
+    height: 75px;
+    width: 75px;
     margin: 2rem 0 !important;
 
     @media screen and (max-width: $breakpoint-phone) {
@@ -27,8 +29,8 @@
     }
 
     span {
-        font-size: 3rem;
-        font-weight: 400;
+        font-size: 3.7rem;
+        font-weight: 600;
         color: $white;
         text-align: center;
 
@@ -42,12 +44,12 @@
     span {
         color: $text-color;
         font-weight: 400;
-        font-size: 1.7rem;
+        font-size: 1.5rem;
         display: block;
 
         i {
             color: $header-bg !important;
-            font-size: 2rem;
+            font-size: 1.6rem;
             padding-right: 1rem;
 
         }
@@ -96,7 +98,7 @@
 .event-container {
     position: absolute;
     top: 340px;
-    left: 80px;
+    left: 100px;
     background-color: $white;
     text-align: center;
 
@@ -120,6 +122,8 @@
 
     .title-event {
         a {
+            display: flex;
+            padding: 2rem;
             h4 {
                 font-weight: 400;
                 font-size: 3rem;

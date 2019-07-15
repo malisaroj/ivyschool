@@ -426,13 +426,37 @@ header {
 @media screen and (max-width: 576px) {
   .main-menu {
     display: none;
-    z-index: 99999;
-    top: 105px;
+    position: fixed;
+    z-index: 9999;
+    background-color: #000;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    height: 100%;
+    overflow-x: hidden;
   }
 }
 .main-menu .menu-item {
   padding-top: 20px;
   display: inline-flex;
+}
+.main-menu .menu-item .closebtn {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+@media screen and (max-width: 576px) {
+  .main-menu .menu-item .closebtn {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
 }
 .main-menu .menu-item a {
   color: #fff;
@@ -443,12 +467,30 @@ header {
 @media screen and (max-width: 576px) {
   .main-menu .menu-item {
     display: block;
+    text-decoration: none;
+    color: #818181;
+    transition: 0.3s;
+  }
+}
+@media screen and (max-width: 576px) {
+  .main-menu .menu-item .main-menu-item {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    display: block;
+    transition: 0.3s;
   }
 }
 .main-menu .menu-item .main-menu-item a {
   color: #777777 !important;
   font-weight: 600;
-  font-size: 40px;
+}
+@media screen and (max-width: 576px) {
+  .main-menu .menu-item .main-menu-item a {
+    font-size: 20px !important;
+  }
+}
+.main-menu .menu-item .main-menu-item a:hover {
+  color: #f1f1f1;
 }
 .main-menu .menu-item .main-menu-item i {
   color: #777777 !important;
@@ -486,6 +528,12 @@ header {
 }
 .contact-info .row {
   padding-right: 2rem;
+}
+@media screen and (max-width: 768px) {
+  .contact-info .row {
+    font-size: smaller;
+    padding-right: 0;
+  }
 }
 .contact-info .logo-menu-icon i {
   color: #fff;
@@ -549,9 +597,33 @@ li.dropdown {
   .mobile-nav {
     display: block;
     position: absolute;
-    right: 0;
-    bottom: 0;
+    left: -20px;
+    bottom: -60px;
   }
+}
+.mobile-nav a i {
+  font-size: 2rem;
+}
+
+.popup-menu {
+  width: 1000px;
+  margin-left: -350px;
+  background-color: #fff;
+  border-radius: 5px;
+  z-index: 99999;
+  position: relative;
+  left: 200px;
+  top: 0px;
+}
+.popup-menu .container {
+  padding: 0;
+  margin: 0 !important;
+}
+
+.login-img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .copyright {
@@ -718,7 +790,7 @@ body {
   position: absolute;
   left: 150px;
   top: 130px;
-  z-index: 999;
+  z-index: 1;
 }
 .banner-text h2 {
   font-size: 4rem;
@@ -1029,6 +1101,8 @@ body {
 .tweet-feed {
   padding-top: 150px;
   text-align: center;
+  width: 80%;
+  margin: 0 auto !important;
 }
 @media screen and (max-width: 576px) {
   .tweet-feed {
@@ -1041,7 +1115,7 @@ body {
 }
 .tweet-feed p {
   color: #fff;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 #certificate-carousel {
@@ -1091,6 +1165,8 @@ body {
 
 .testimonial-content {
   text-align: center;
+  width: 80%;
+  margin: 0 auto !important;
 }
 .testimonial-content .content {
   color: #777777;
@@ -1129,6 +1205,8 @@ body {
   font-size: 1.6rem;
   text-transform: uppercase;
   text-align: center;
+  height: 75px;
+  width: 75px;
   margin: 2rem 0 !important;
 }
 @media screen and (max-width: 576px) {
@@ -1137,8 +1215,8 @@ body {
   }
 }
 .date-event span {
-  font-size: 3rem;
-  font-weight: 400;
+  font-size: 3.7rem;
+  font-weight: 600;
   color: #fff;
   text-align: center;
 }
@@ -1151,12 +1229,12 @@ body {
 .meta-event span {
   color: #777777;
   font-weight: 400;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   display: block;
 }
 .meta-event span i {
   color: #414aa9 !important;
-  font-size: 2rem;
+  font-size: 1.6rem;
   padding-right: 1rem;
 }
 
@@ -1191,7 +1269,7 @@ body {
 .event-container {
   position: absolute;
   top: 340px;
-  left: 80px;
+  left: 100px;
   background-color: #fff;
   text-align: center;
 }
@@ -1216,6 +1294,10 @@ body {
   .event-container {
     top: 114px;
   }
+}
+.event-container .title-event a {
+  display: flex;
+  padding: 2rem;
 }
 .event-container .title-event a h4 {
   font-weight: 400;
@@ -1324,6 +1406,7 @@ form {
   background-image: url("../../assets/img/bg-05.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  background-attachment: fixed;
 }
 #feature-content .feature-container {
   background-color: rgba(17, 17, 17, 0.75);
@@ -1335,8 +1418,24 @@ form {
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
+@media screen and (max-width: 768px) {
+  #faq {
+    padding-top: 700px;
+    background-image: none;
+  }
+}
+@media screen and (max-width: 576px) {
+  #faq {
+    padding-top: 750px;
+  }
+}
 #faq div .row {
   justify-content: flex-end;
+}
+@media screen and (max-width: 768px) {
+  #faq div .row {
+    justify-content: center;
+  }
 }
 
 .faq-list div h3 {
@@ -1377,6 +1476,21 @@ form {
   background-position: 50% top;
   position: relative;
 }
+@media screen and (max-width: 1024px) {
+  #contact-form {
+    height: 800px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #contact-form {
+    background-position: 0 0;
+  }
+}
+@media screen and (max-width: 576px) {
+  #contact-form {
+    background-position: center;
+  }
+}
 #contact-form div .form-wrap {
   padding: 38px 25px;
   background: #fff;
@@ -1384,10 +1498,23 @@ form {
   width: 530px;
   max-width: 100%;
   display: inline-block;
-  position: relative;
   z-index: 1;
   border: #615859 solid 5px;
   border-radius: 5px;
+}
+@media screen and (max-width: 1024px) {
+  #contact-form div .form-wrap {
+    position: absolute;
+    top: 23px;
+    left: 459px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #contact-form div .form-wrap {
+    top: 800px;
+    left: 0px;
+    width: 100%;
+  }
 }
 #contact-form div .form-wrap h4 {
   font-size: 3rem;
@@ -1464,6 +1591,11 @@ form {
   padding-bottom: 7rem;
   text-align: center;
 }
+@media screen and (max-width: 1024px) {
+  .title {
+    bottom: -600px;
+  }
+}
 .title h1 {
   color: #fff;
   line-height: 7.2rem;
@@ -1472,6 +1604,11 @@ form {
   text-transform: none;
   margin: 0px 0px 25px 0px !important;
   text-align: center;
+}
+@media screen and (max-width: 1024px) {
+  .title h1 {
+    font-size: 5.1rem;
+  }
 }
 
 .icon-image img {
@@ -1487,31 +1624,166 @@ form {
   font-size: 4rem;
   font-weight: 600;
 }
+@media screen and (max-width: 768px) {
+  .content .content-title h2 {
+    text-align: center;
+  }
+}
 .content .content-info {
-  color: #777777;
+  color: #fff;
   font-size: 1.6rem;
-  font-weight: 400;
+  font-weight: 300;
   text-align: right;
   padding-top: 5rem;
+}
+@media screen and (max-width: 768px) {
+  .content .content-info {
+    text-align: center;
+  }
 }
 
 .rightside {
   border-left: 1px solid #777777;
 }
+@media screen and (max-width: 768px) {
+  .rightside {
+    border-left: unset;
+  }
+}
 
 .rightside-content .content-title h4 {
   color: #fff;
-  font-size: 3rem;
-  font-weight: 400;
+  font-size: 2rem;
+  font-weight: 600;
   text-align: left;
   line-height: 0;
 }
 .rightside-content .content-info {
-  color: #777777;
+  color: #fff;
   font-size: 1.6rem;
-  font-weight: 400;
+  font-weight: 300;
   text-align: left;
   padding: 2rem 0;
+}
+
+#courses {
+  position: relative;
+  padding-bottom: 400px;
+}
+@media screen and (max-width: 576px) {
+  #courses {
+    padding-bottom: 600px;
+  }
+}
+#courses .custom-bg {
+  background-image: url("../../assets/img/bg-06.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+#courses .custom-bg .row .content {
+  margin: 0 auto !important;
+  position: relative;
+}
+#courses .custom-bg .row .content .content-title h4 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #fff;
+  text-transform: capitalize;
+  padding-top: 50px;
+  padding-bottom: 200px;
+}
+@media screen and (max-width: 576px) {
+  #courses .custom-bg .row .content .content-title h4 {
+    font-size: 2.5rem;
+    padding-top: 100px;
+  }
+}
+#courses .courses-slider {
+  position: absolute;
+  top: 160px;
+  left: 100px;
+}
+@media screen and (max-width: 1024px) {
+  #courses .courses-slider {
+    left: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #courses .courses-slider {
+    left: 22px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #courses .courses-slider {
+    left: 0;
+    top: 200px;
+  }
+}
+#courses .courses-slider .row .owl-carousel .portfolio-container {
+  border: 1px solid #ced4da;
+  height: 450px;
+}
+@media screen and (max-width: 576px) {
+  #courses .courses-slider .row .owl-carousel .portfolio-container {
+    height: 560px;
+  }
+}
+#courses .courses-slider .row .owl-carousel .portfolio-container h4 {
+  font-size: 2rem;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+#courses .courses-slider .row .owl-carousel .portfolio-container img {
+  width: 90% !important;
+  margin: 0 auto !important;
+  padding-top: 1rem;
+}
+#courses .courses-slider .row .owl-carousel .portfolio-container .price-tag {
+  border-top: 1px solid #ced4da;
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-align: left;
+}
+#courses .courses-slider .row .owl-carousel .portfolio-container .content-details {
+  height: 200px;
+}
+#courses .courses-slider .row .owl-carousel .portfolio-container .content-details .avatar {
+  width: 68px;
+  height: 68px;
+  overflow: hidden;
+  position: relative;
+  z-index: 100;
+  margin: -34px auto 10px auto !important;
+}
+#courses .courses-slider .row .owl-carousel .portfolio-container .content-details .avatar img {
+  width: 100%;
+  height: 100%;
+}
+
+#partners {
+  background-color: #0073bb;
+  height: 200px;
+}
+#partners .container .row div img {
+  color: #fff;
+}
+@media screen and (max-width: 1024px) {
+  #partners .container .row div img {
+    width: 140px;
+    height: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  #partners .container .row div img {
+    width: 100px;
+    height: auto;
+  }
+}
+@media screen and (max-width: 576px) {
+  #partners .container .row div img {
+    width: 50px;
+    height: auto;
+  }
 }
 
 .btn {

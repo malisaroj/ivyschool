@@ -240,6 +240,8 @@
 .tweet-feed {
     padding-top: 150px;
     text-align: center;
+    width: 80%;
+    margin: 0 auto !important;
 
     @media screen and (max-width: $breakpoint-phone) {
         padding-top: 0;
@@ -254,7 +256,7 @@
     p {
 
         color: $white;
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
 
@@ -314,6 +316,8 @@
 
 .testimonial-content {
     text-align: center;
+    width: 80%;
+    margin: 0 auto !important;
 
 
     .content {

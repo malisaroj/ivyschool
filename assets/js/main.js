@@ -2,10 +2,22 @@ jQuery(document).ready(function () {
     jQuery(".logo-menu-icon").click(function () {
         if ($(".main-menu").css("display") === "block") {
             $(".main-menu").css("display", "none");
+            $(".main-menu").css("width", "0");
+
         } else {
             $(".main-menu").css("display", "block");
+            $(".main-menu").css("width", "70%");
+            $(".mobile-nav").css("display", "none");
+
+
         }
     });
+
+    jQuery(".closebtn").click(function () {
+        $(".main-menu").css("width", "0");
+        $(".mobile-nav").css("display", "block");
+    }); 
+ 
 
     jQuery('#carousel').owlCarousel({
         loop: true,

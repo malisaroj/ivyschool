@@ -65,31 +65,74 @@ header {
 
     @media screen and (max-width: $breakpoint-phone) {
         display: none;
-        z-index: 99999;
-        top: 105px;
+        position: fixed;
+        z-index: 9999;
+        background-color: $black;
+        top: 0;
+        left: 0;
+        transition: 0.5s;
+        height: 100%;
+        overflow-x: hidden;
+
     }
 
     .menu-item {
         padding-top: 20px;
         display: inline-flex;
 
-            
+        .closebtn {
+            display: none;
+            @media screen and (max-width: $breakpoint-phone) {
+                display: block;
+                position: absolute;
+                top: 0;
+                right: 25px;
+                font-size: 36px;
+                margin-left: 50px;
+            }
+
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
         a {
             color: $white;
             font-size: 32px;
             font-weight: 400;
             text-transform: uppercase;
         }
-    
+
         @media screen and (max-width: $breakpoint-phone) {
             display: block;
+            text-decoration: none;
+            color: #818181;
+            transition: 0.3s;
         }
 
         .main-menu-item {
+            @media screen and (max-width: $breakpoint-phone) {
+                padding: 8px 8px 8px 32px;
+                text-decoration: none;
+                display: block;
+                transition: 0.3s;
+            }
+
             a {
                 color: $text-color !important;
                 font-weight: 600;
-                font-size: 40px;
+
+                @media screen and (max-width: $breakpoint-phone) {
+                    font-size: 20px !important;
+                }
+
+            }
+
+            a:hover {
+                color: #f1f1f1;
+
             }
 
             i {
@@ -134,12 +177,17 @@ header {
 
 .contact-info {
     display: inline-flex;
+
     @media screen and (max-width: $breakpoint-phone) {
         display: none;
     }
 
     .row {
         padding-right: 2rem;
+        @media screen and (max-width: $breakpoint-tablet) {
+            font-size: smaller;
+            padding-right: 0;
+        }
     }
 
     .logo-menu-icon {
@@ -208,8 +256,39 @@ li.dropdown {
     @media screen and (max-width: $breakpoint-phone) {
         display: block;
         position: absolute;
-        right: 0;
-        bottom: 0;
+        left: -20px;
+        bottom: -60px;
 
+    }
+    a {
+        i {
+            font-size: 2rem;
+        }
+    }
+}
+
+
+.popup-menu {
+    width: 1000px;
+    margin-left: -350px;
+    background-color: $white;
+    border-radius: 5px;
+    z-index: 99999;
+    position: relative; 
+    left: 200px;
+    top: 0px;
+
+    .container {
+        padding: 0;
+        margin: 0 !important;
+    }
+
+}
+
+.login-img {
+    img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
     }
 }
