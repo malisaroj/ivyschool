@@ -8,16 +8,27 @@ jQuery(document).ready(function () {
             $(".main-menu").css("display", "block");
             $(".main-menu").css("width", "70%");
             $(".mobile-nav").css("display", "none");
-
-
         }
     });
 
     jQuery(".closebtn").click(function () {
         $(".main-menu").css("width", "0");
         $(".mobile-nav").css("display", "block");
-    }); 
- 
+    });
+
+    jQuery(".login").click(function () {
+        $(".card").css("display", "block");
+    });
+
+
+    jQuery(".register").click(function () {
+        $("#login").css("display", "none");
+        $("#register").css("display", "block");
+    });
+
+    jQuery(".closelogin").click(function () {
+        $('.card').hide();
+    });
 
     jQuery('#carousel').owlCarousel({
         loop: true,

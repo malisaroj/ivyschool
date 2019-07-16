@@ -82,6 +82,7 @@ header {
 
         .closebtn {
             display: none;
+
             @media screen and (max-width: $breakpoint-phone) {
                 display: block;
                 position: absolute;
@@ -184,6 +185,7 @@ header {
 
     .row {
         padding-right: 2rem;
+
         @media screen and (max-width: $breakpoint-tablet) {
             font-size: smaller;
             padding-right: 0;
@@ -260,6 +262,7 @@ li.dropdown {
         bottom: -60px;
 
     }
+
     a {
         i {
             font-size: 2rem;
@@ -268,27 +271,101 @@ li.dropdown {
 }
 
 
-.popup-menu {
-    width: 1000px;
-    margin-left: -350px;
-    background-color: $white;
-    border-radius: 5px;
-    z-index: 99999;
-    position: relative; 
-    left: 200px;
-    top: 0px;
+.card {
+    z-index: 9999;
+    width: 80%;
+    margin: 0 auto !important;
+    display: none;
+    div {
+        div {
+            .img-container {
+                img {
+                    height: 580px;
+                }
+            }
+        }
 
-    .container {
-        padding: 0;
-        margin: 0 !important;
+        div {
+            h5 {
+                font-weight: 600;
+                padding-left: 3rem;
+                font-size: 3rem;
+                text-transform: capitalize;
+
+
+                .closelogin {
+                    display: flex;
+                    justify-content: end;
+                    padding: 0;
+                    color: $black;
+                }
+            }
+        }
+
+        div {
+            div {
+                form {
+                    div {
+                        padding-bottom: 0;
+                        padding-top: 2rem;
+
+                        div {
+                            div {
+                                label {
+                                    padding-left: 2rem;
+                                }
+                            }
+                        }
+                    }
+
+                    p {
+                        a {
+                            display: inline-block;
+                        }
+
+                    }
+
+                    a {
+                        display: inline-flex;
+                        justify-content: space-between;
+                        i {
+                            padding-top: 1rem;
+                            font-size: 4rem;
+                        }
+                        .fa-facebook-f {
+                            color: #3b5998;
+                        }
+
+                        .fa-twitter {
+                            color: #55acee;
+                        }
+
+                        .fa-linkedin {
+                            color: #0082ca;
+                        }
+                    }
+
+                    button {
+                        height: 4rem;
+                        border-radius: 2rem;
+                        font-size: 2rem;
+                        text-transform: uppercase;
+                    }
+                }
+
+            }
+        }
+
     }
-
 }
 
-.login-img {
-    img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
+#register {
+    display: none;
+}
+
+.custom-img {
+    @media screen and (max-width: $breakpoint-tablet){
+        display: none;
     }
 }
+

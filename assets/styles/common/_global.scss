@@ -17,10 +17,7 @@ li {
 
 a {
     @extend %message-shared;
-
-    a:hover {
-        text-decoration: none;
-    }
+    text-decoration: none!important;
 }
 
 h3 {

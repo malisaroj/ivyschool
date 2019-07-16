@@ -11,8 +11,8 @@ li {
   list-style: none;
 }
 
-a a:hover {
-  text-decoration: none;
+a {
+  text-decoration: none !important;
 }
 
 i {
@@ -605,25 +605,69 @@ li.dropdown {
   font-size: 2rem;
 }
 
-.popup-menu {
-  width: 1000px;
-  margin-left: -350px;
-  background-color: #fff;
-  border-radius: 5px;
-  z-index: 99999;
-  position: relative;
-  left: 200px;
-  top: 0px;
+.card {
+  z-index: 9999;
+  width: 80%;
+  margin: 0 auto !important;
+  display: none;
 }
-.popup-menu .container {
+.card div div .img-container img {
+  height: 580px;
+}
+.card div div h5 {
+  font-weight: 600;
+  padding-left: 3rem;
+  font-size: 3rem;
+  text-transform: capitalize;
+}
+.card div div h5 .closelogin {
+  display: flex;
+  justify-content: end;
   padding: 0;
-  margin: 0 !important;
+  color: #000;
+}
+.card div div div form div {
+  padding-bottom: 0;
+  padding-top: 2rem;
+}
+.card div div div form div div div label {
+  padding-left: 2rem;
+}
+.card div div div form p a {
+  display: inline-block;
+}
+.card div div div form a {
+  display: inline-flex;
+  justify-content: space-between;
+}
+.card div div div form a i {
+  padding-top: 1rem;
+  font-size: 4rem;
+}
+.card div div div form a .fa-facebook-f {
+  color: #3b5998;
+}
+.card div div div form a .fa-twitter {
+  color: #55acee;
+}
+.card div div div form a .fa-linkedin {
+  color: #0082ca;
+}
+.card div div div form button {
+  height: 4rem;
+  border-radius: 2rem;
+  font-size: 2rem;
+  text-transform: uppercase;
 }
 
-.login-img img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
+#register {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .custom-img {
+    display: none;
+  }
 }
 
 .copyright {
