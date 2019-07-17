@@ -1,3 +1,9 @@
+/*********************
+VARIABLES
+*********************/
+/*********************
+BREAKPOINTS
+*********************/
 /* Import theme styles */
 .logo-section, .top-menu, h3, a, h4, h5 {
   text-transform: uppercase;
@@ -96,6 +102,11 @@ h6 {
   #calltoaction .row {
     display: block;
     text-align: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  #calltoaction .row .col .row .col {
+    padding-bottom: 1rem;
   }
 }
 
@@ -670,6 +681,17 @@ li.dropdown {
   }
 }
 
+input[type=search] {
+  color: #414aa9;
+  text-align: center;
+  cursor: pointer;
+  display: block;
+  width: 0;
+  height: 4.6rem;
+  font-size: 1.4rem;
+  border: none;
+}
+
 .copyright {
   background-color: #d2d2d5;
   padding-top: 10px;
@@ -1013,10 +1035,39 @@ body {
     margin-top: 90rem !important;
   }
 }
+#tweets .tweet-feed {
+  padding-top: 150px;
+  text-align: center;
+  width: 60%;
+  margin: 0 auto !important;
+}
+@media screen and (max-width: 576px) {
+  #tweets .tweet-feed {
+    padding-top: 0;
+  }
+}
+#tweets .tweet-feed i {
+  font-size: 3rem;
+  padding: 3rem 0;
+  color: #414aa9;
+}
+#tweets .tweet-feed p {
+  color: #fff;
+  font-size: 1.8rem;
+}
+#tweets .tweet-feed p a {
+  color: #414aa9;
+  display: inline;
+  padding-right: 0rem;
+  padding-left: 0rem;
+}
 #tweets .tweet-container {
   background-color: rgba(17, 17, 17, 0.75);
   height: 400px;
   width: 100%;
+}
+#tweets .tweet-container #tweet .owl-dots {
+  display: none;
 }
 
 .icon-box {
@@ -1140,26 +1191,6 @@ body {
   font-size: 1.6rem;
   font-weight: 400;
   color: #777777;
-}
-
-.tweet-feed {
-  padding-top: 150px;
-  text-align: center;
-  width: 80%;
-  margin: 0 auto !important;
-}
-@media screen and (max-width: 576px) {
-  .tweet-feed {
-    padding-top: 0;
-  }
-}
-.tweet-feed i {
-  font-size: 3rem;
-  padding: 3rem 0;
-}
-.tweet-feed p {
-  color: #fff;
-  font-size: 1.8rem;
 }
 
 #certificate-carousel {
@@ -1367,24 +1398,10 @@ body {
   padding-bottom: 40px;
 }
 
-.contact-details .content {
-  padding-top: 5rem;
-}
-.contact-details .content h4 {
-  font-size: 2rem;
-  font-weight: 600;
-  display: block;
-}
-
 .description {
   color: #777777;
   font-size: 1.6rem;
   font-weight: 400;
-}
-
-.contact-icon i {
-  color: #414aa9 !important;
-  font-size: 3rem;
 }
 
 .contact-details {
@@ -1394,6 +1411,23 @@ body {
   .contact-details {
     padding-bottom: 7rem;
   }
+}
+.contact-details .content {
+  padding-top: 5rem;
+}
+@media screen and (max-width: 576px) {
+  .contact-details .content {
+    padding-top: 0;
+  }
+}
+.contact-details .content h4 {
+  font-size: 2rem;
+  font-weight: 600;
+  display: block;
+}
+.contact-details .contact-icon i {
+  color: #414aa9 !important;
+  font-size: 3rem;
 }
 
 #form div h2 {
@@ -1444,6 +1478,9 @@ form {
 .custom-btn {
   width: 203px;
   height: auto;
+}
+.custom-btn a {
+  font-size: 1.4rem !important;
 }
 
 #feature-content {

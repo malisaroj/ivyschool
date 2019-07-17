@@ -30,6 +30,10 @@ jQuery(document).ready(function () {
         $('.card').hide();
     });
 
+    jQuery(".search").click(function () {
+        $('#search').css("width", "100%");
+    });
+
     jQuery('#carousel').owlCarousel({
         loop: true,
         nav: false,

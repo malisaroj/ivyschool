@@ -1,160 +1,149 @@
 .copyright {
-    background-color: $copyright-bg;
-    padding-top: 10px;
-    padding-bottom: 10px;
+  background-color: $copyright-bg;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
-    p {
-        color: $copyright-text;
-        text-transform: capitalize;
-        font-size: 16px;
-        margin: 0 auto !important;
-        width: 80%;
-
-    }
+  p {
+    color: $copyright-text;
+    text-transform: capitalize;
+    font-size: 16px;
+    margin: 0 auto !important;
+    width: 80%;
+  }
 }
 
 footer {
-    background-color: $footer-bg;
+  background-color: $footer-bg;
 }
 
 .footer-container {
-    width: 80%;
-    height: 430px;
-    margin: 0 auto !important;
+  width: 80%;
+  height: 430px;
+  margin: 0 auto !important;
 
-    @media screen and (max-width: $breakpoint-desktop) {
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-between;
+  @media screen and (max-width: $breakpoint-desktop) {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
 
-    }
-
-    @media screen and (max-width: $breakpoint-phone) {
-        display: block;
-
-    }
+  @media screen and (max-width: $breakpoint-phone) {
+    display: block;
+  }
 }
 
 .footer-col {
-    padding: 7rem 0;
+  padding: 7rem 0;
 
-    p {
-        font-weight: 400;
-        font-size: 1.3rem;
-        padding: 2rem 0;
-    }
+  p {
+    font-weight: 400;
+    font-size: 1.3rem;
+    padding: 2rem 0;
+  }
 
-    h5 {
-        font-weight: 700;
-    }
+  h5 {
+    font-weight: 700;
+  }
 }
 
 .footer-menu-container {
-    @media screen and (max-width: $breakpoint-phone) {
-        display: none;
-
-    }
+  @media screen and (max-width: $breakpoint-phone) {
+    display: none;
+  }
 }
 
 .footer-menu {
-    a {
-        font-weight: 400;
-        color: $copyright-text;
-        padding: 1rem;
-        font-size: 1.3rem;
+  a {
+    font-weight: 400;
+    color: $copyright-text;
+    padding: 1rem;
+    font-size: 1.3rem;
+  }
 
-
-    }
-
-    a:hover {
-        background-color: $white;
-
-    }
-
+  a:hover {
+    background-color: $white;
+  }
 }
 
 .footer-side {
-    padding-top: 53px;
-    background-color: $header-bg;
-    height: 430px;
-    width: 360px;
+  padding-top: 53px;
+  background-color: $header-bg;
+  height: 430px;
+  width: 360px;
 
-    @media screen and (max-width: $breakpoint-desktop) {
-        display: none;
-    }
+  @media screen and (max-width: $breakpoint-desktop) {
+    display: none;
+  }
 
-    .contact-info {
-        padding-left: 85px;
-    }
+  .contact-info {
+    padding-left: 85px;
+  }
 }
 
 #logo-school {
-    height: auto;
-    width: 100px;
+  height: auto;
+  width: 100px;
 }
 
 .contact-footer {
-    background-color: $footer-contact-bg;
+  background-color: $footer-contact-bg;
 }
 
 .contact-logo {
-    padding-left: 1rem;
+  padding-left: 1rem;
 
-    img {
-        margin-right: 2rem !important;
+  img {
+    margin-right: 2rem !important;
 
-        @media screen and (max-width: $breakpoint-desktop) {
-            margin-right: 0 !important;
-        }
-
-        @media screen and (max-width: $breakpoint-tablet) {
-            width: auto;
-            height: 40px;
-        }
+    @media screen and (max-width: $breakpoint-desktop) {
+      margin-right: 0 !important;
     }
 
-
+    @media screen and (max-width: $breakpoint-tablet) {
+      width: auto;
+      height: 40px;
+    }
+  }
 }
 
 .footer-call {
-    line-height: 1;
+  line-height: 1;
 
-    span {
-
-        font-size: 19px;
-        font-weight: 400;
-        color: $white;
-        h6 {
-            font-weight: 600;
-            text-transform: uppercase;
-            font-size: 2rem;
-            color: $white;
-        }
+  span {
+    font-size: 19px;
+    font-weight: 400;
+    color: $white;
+    h6 {
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 2rem;
+      color: $white;
     }
+  }
 }
 
 .footer-contact {
-    h5 {
-        display: block !important;
-        font-weight: 700;
-        font-size: 1.3rem;
-        color: $white;
-        padding-left: 0px;
-        width: 80%;
-        margin: 0 auto !important;
-    }
+  h5 {
+    display: block !important;
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: $white;
+    padding-left: 0px;
+    width: 80%;
+    margin: 0 auto !important;
+  }
 
-    p {
-        font-weight: 300;
-        font-size: 1.3rem;
-        color: $white;
-        width: 80%;
-        margin: 0 auto !important;
-    }
+  p {
+    font-weight: 300;
+    font-size: 1.3rem;
+    color: $white;
+    width: 80%;
+    margin: 0 auto !important;
+  }
 }
 
 .footer-icon {
-    i {
-        font-size: 3rem;
-    }
+  i {
+    font-size: 3rem;
+  }
 }

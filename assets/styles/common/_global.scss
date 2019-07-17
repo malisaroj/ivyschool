@@ -1,45 +1,44 @@
 %message-shared {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 h5 {
-    @extend %message-shared;
-    font-weight: bold;
+  @extend %message-shared;
+  font-weight: bold;
 }
 
 h4 {
-    @extend %message-shared;
+  @extend %message-shared;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    @extend %message-shared;
-    text-decoration: none!important;
+  @extend %message-shared;
+  text-decoration: none !important;
 }
 
 h3 {
-    @extend %message-shared;
+  @extend %message-shared;
 }
 
 i {
-    color: $white;
+  color: $white;
 }
 
 hr {
-    background-color: $white;
-    width: 90%;
-    margin: 2rem auto !important;
+  background-color: $white;
+  width: 90%;
+  margin: 2rem auto !important;
 }
 
 h6 {
-    font-weight: 600;
-    font-size: 1.3rem;
-
+  font-weight: 600;
+  font-size: 1.3rem;
 }
 
 .container {
-    margin: 0 auto !important;
+  margin: 0 auto !important;
 }

@@ -1,59 +1,56 @@
-.contact-details {
-    .content {
-        padding-top: 5rem;
-    
-        h4 {
-            font-size: 2rem;
-            font-weight: 600;
-            display: block;
-        }
-    
-    }
-}
-
-
 .description {
-    color: $text-color;
-    font-size: 1.6rem;
-    font-weight: 400;
-}
-
-.contact-icon {
-    i {
-        color: $header-bg !important;
-        font-size: 3rem;
-    }
-
+  color: $text-color;
+  font-size: 1.6rem;
+  font-weight: 400;
 }
 
 .contact-details {
-    text-align: center;
+  text-align: center;
+
+  @media screen and (max-width: $breakpoint-phone) {
+    padding-bottom: 7rem;
+  }
+
+  .content {
+    padding-top: 5rem;
 
     @media screen and (max-width: $breakpoint-phone) {
-        padding-bottom: 7rem;
-
+      padding-top: 0;
     }
+
+    h4 {
+      font-size: 2rem;
+      font-weight: 600;
+      display: block;
+    }
+  }
+
+  .contact-icon {
+    i {
+      color: $header-bg !important;
+      font-size: 3rem;
+    }
+  }
 }
 
 #form {
-    div {
-        h2 {
-            font-weight: 600;
-            font-size: 3rem;
-            text-align: center;
-            padding-bottom: 7rem;
-
-        }
-
-        button {
-            margin: 0 auto !important;
-            display: block;
-        }
+  div {
+    h2 {
+      font-weight: 600;
+      font-size: 3rem;
+      text-align: center;
+      padding-bottom: 7rem;
     }
+
+    button {
+      margin: 0 auto !important;
+      display: block;
+    }
+  }
 }
 
 form {
-    padding: 2rem 0;
+  padding: 2rem 0;
 }
 
 /* .row {
@@ -61,45 +58,46 @@ form {
 } */
 
 .form-control {
-    padding: 3rem;
+  padding: 3rem;
 }
 
 /* Overriding styles */
 
 @mixin placeholder {
-    ::-webkit-input-placeholder {
-        @content
-    }
+  ::-webkit-input-placeholder {
+    @content;
+  }
 
-    :-moz-placeholder {
-        @content
-    }
+  :-moz-placeholder {
+    @content;
+  }
 
-    ::-moz-placeholder {
-        @content
-    }
+  ::-moz-placeholder {
+    @content;
+  }
 
-    :-ms-input-placeholder {
-        @content
-    }
+  :-ms-input-placeholder {
+    @content;
+  }
 }
 
-
 @include placeholder {
-    font-size: 1.6rem !important;
+  font-size: 1.6rem !important;
 }
 
 #contacts {
-    .container {
-        @media screen and (max-width: $breakpoint-phone) {
-            padding-bottom: 0;
-
-        }
+  .container {
+    @media screen and (max-width: $breakpoint-phone) {
+      padding-bottom: 0;
     }
-
+  }
 }
 
 .custom-btn {
-    width: 203px;
-    height: auto;
+  width: 203px;
+  height: auto;
+
+  a {
+    font-size: 1.4rem !important;
+  }
 }
