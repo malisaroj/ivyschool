@@ -8,11 +8,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ivy School</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
-    <!-- main css -->
+    <link rel="stylesheet" href="assets/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <!-- Style CSS -->
     <link rel="stylesheet" href="assets/styles/style.css">
 </head>
 
@@ -39,7 +41,8 @@
         <div class="logo-container">
             <div class="logo-section">
                 <div class="logo">
-                    <img src="assets/img/logo-home3-1.png" alt="">
+                    <a href="index.html"><img src="assets/img/logo-home3-1.png" alt="">
+                    </a>
                 </div>
 
                 <div class="contact-info">
@@ -178,24 +181,24 @@
 
                             <!-- Username-->
                             <div class="md-form custom-col">
-                                <input type="text" id="materialLoginFormUsername" class="form-control"
+                                <input type="text" id="materialRegisterFormUsername" class="form-control"
                                     placeholder="Username">
                             </div>
                             <!-- Email -->
                             <div class="md-form custom-col">
-                                <input type="email" id="materialLoginFormEmail" class="form-control"
+                                <input type="email" id="materialRegisterFormEmail" class="form-control"
                                     placeholder="Email">
                             </div>
 
                             <!-- Password -->
                             <div class="md-form custom-col">
-                                <input type="password" id="materialLoginFormPassword" class="form-control"
+                                <input type="password" id="materialRegisterFormPassword" class="form-control"
                                     placeholder="Password">
                             </div>
 
                             <!-- Password -->
                             <div class="md-form custom-col">
-                                <input type="password" id="materialLoginFormConfirmPassword" class="form-control"
+                                <input type="password" id="materialRegisterFormConfirmPassword" class="form-control"
                                     placeholder="Confirm Password">
                             </div>
 
@@ -254,19 +257,80 @@
     </header>
 
     <div class="wrapper">
-
         <section id="banner">
-            <div class="banner-img">
-                <img src="assets/img/layer.png" alt="banner">
-                <div class="banner-text">
-                    <h5>experience the life</h5>
-                    <h2>You can learn anything </h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus reprehenderit eveniet quos
-                        modi
-                        illum quod vero dolore aliquid, dignissimos iste, atque mollitia, dolor ipsam fuga non cumque
-                        exercitationem voluptatum reiciendis.</p>
-                    <button class="btn"><a href="#">Learn More About Us ></i>
-                        </a></button>
+            <div class="owl-carousel owl-theme" id="owl-banner">
+                <div>
+                    <div class="banner-img">
+                        <img src="assets/img/layer.png" alt="banner">
+                    </div>
+
+                    <div class="banner-text">
+                        <h5>experience the life</h5>
+                        <h2>You can learn anything </h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus reprehenderit eveniet
+                            quos
+                            modi
+                            illum quod vero dolore aliquid, dignissimos iste, atque mollitia, dolor ipsam fuga non
+                            cumque
+                            exercitationem voluptatum reiciendis.</p>
+                        <button class="btn"><a href="#">Learn More About Us ></i>
+                            </a></button>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="banner-img">
+                        <img src="assets/img/layer.png" alt="banner">
+                    </div>
+
+                    <div class="banner-text">
+                        <h5>experience the life</h5>
+                        <h2>You can learn anything </h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus reprehenderit eveniet
+                            quos
+                            modi
+                            illum quod vero dolore aliquid, dignissimos iste, atque mollitia, dolor ipsam fuga non
+                            cumque
+                            exercitationem voluptatum reiciendis.</p>
+                        <button class="btn"><a href="#">Learn More About Us ></i>
+                            </a></button>
+                    </div>
+                </div>
+                <div>
+                    <div class="banner-img">
+                        <img src="assets/img/layer.png" alt="banner">
+                    </div>
+
+                    <div class="banner-text">
+                        <h5>experience the life</h5>
+                        <h2>You can learn anything </h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus reprehenderit eveniet
+                            quos
+                            modi
+                            illum quod vero dolore aliquid, dignissimos iste, atque mollitia, dolor ipsam fuga non
+                            cumque
+                            exercitationem voluptatum reiciendis.</p>
+                        <button class="btn"><a href="#">Learn More About Us ></i>
+                            </a></button>
+                    </div>
+                </div>
+                <div>
+                    <div class="banner-img">
+                        <img src="assets/img/layer.png" alt="banner">
+                    </div>
+
+                    <div class="banner-text">
+                        <h5>experience the life</h5>
+                        <h2>You can learn anything </h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus reprehenderit eveniet
+                            quos
+                            modi
+                            illum quod vero dolore aliquid, dignissimos iste, atque mollitia, dolor ipsam fuga non
+                            cumque
+                            exercitationem voluptatum reiciendis.</p>
+                        <button class="btn"><a href="#">Learn More About Us ></i>
+                            </a></button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -611,6 +675,7 @@
     </div>
     <script src="assets/js/jquery.js"></script>
     <script src="assets/bootstrap/js/bootstrap.js"></script>
+    <script src="assets/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
     <script src="assets/js/main.js"></script>
 
 </body>

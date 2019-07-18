@@ -199,6 +199,7 @@ p {
 
   @media screen and (max-width: $breakpoint-phone) {
     width: 100%;
+    margin: 1rem auto !important;
   }
 }
 
@@ -221,9 +222,23 @@ p {
   top: 77px;
   left: 0;
 
+  @media screen and (max-width: $breakpoint-desktop) {
+   top: 145px;
+  }
+
+  
+  @media screen and (max-width: $breakpoint-tablet) {
+    top: 90px;
+   }
+
+   @media screen and (max-width: $breakpoint-phone) {
+    top: 100px;
+   }
+
   h4 {
     margin: 0 auto !important;
     font-weight: 600;
+    font-size: 1.7rem;
     color: $white;
     text-align: center;
     width: 80%;
@@ -236,6 +251,7 @@ p {
     color: $white;
     font-weight: 300;
     text-align: center;
+    font-size: 1.5rem;
   }
 }
 

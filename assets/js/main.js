@@ -34,7 +34,57 @@ jQuery(document).ready(function () {
         $('#search').css("width", "100%");
     });
 
+    jQuery('#owl-banner').owlCarousel({
+        loop: true,
+        nav: false,
+        smartSpeed: 450,
+        autoplay: true,
+        autoplayTimeout: 8000,
+        autoplayHoverPause: true,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 1
+            }
+        }
+    });
+
     jQuery('#carousel').owlCarousel({
+        loop: true,
+        nav: true,
+        navText: [
+            "<i class='fa fa-chevron-left'></i>",
+            "<i class='fa fa-chevron-right'></i>"
+        ],
+        items: 4,
+        smartSpeed: 450,
+        autoplay: true,
+        autoplayTimeout: 8000,
+        autoplayHoverPause: true,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 1,
+                nav: false
+            },
+            768: {
+                items: 2,
+                nav: false
+            },
+
+            1024: {
+                items: 3,
+                nav: false
+            },
+            1366: {
+                items: 4,
+                loop: false
+            }
+        }
+    });
+
+
+    jQuery('#portfolio-carousel').owlCarousel({
         loop: true,
         nav: false,
         items: 4,
@@ -64,6 +114,7 @@ jQuery(document).ready(function () {
         }
     });
 
+
     jQuery('#certificate').owlCarousel({
         loop: true,
         nav: false,
@@ -90,6 +141,7 @@ jQuery(document).ready(function () {
         }
     });
 
+
     jQuery('#tweet').owlCarousel({
         loop: true,
         nav: false,
@@ -99,9 +151,9 @@ jQuery(document).ready(function () {
         autoplayTimeout: 8000,
         autoplayHoverPause: true,
 
-    });
+    }); 
 
-    jQuery('#testimonial').owlCarousel({
+    jQuery('#testimonial-carousel').owlCarousel({
         loop: true,
         nav: false,
         items: 1,
@@ -110,11 +162,10 @@ jQuery(document).ready(function () {
         autoplayTimeout: 8000,
         autoplayHoverPause: true,
         dots: true,
-        dotsContainer: '.owl-dots',
+        dotsContainer: '#carousel-custom-dots',
 
     });
-
-    $('.owl-dot').click(function () {
+    jQuery('.owl-dot').click(function () {
         owl.trigger('to.owl.carousel', [$(this).index(), 300]);
     });
 });

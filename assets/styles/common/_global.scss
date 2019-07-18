@@ -42,3 +42,14 @@ h6 {
 .container {
   margin: 0 auto !important;
 }
+
+li a:hover, .dropdown:hover .dropbtn {
+
+  background-color: rgba(0, 0 , 0, 0.5) !important;
+  color: $white !important;
+
+}
+
+.main-menu .menu-item .main-menu-item a:hover {
+  color: $white !important;
+}

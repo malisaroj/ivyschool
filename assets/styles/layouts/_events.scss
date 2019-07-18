@@ -33,10 +33,6 @@
     font-weight: 600;
     color: $white;
     text-align: center;
-
-    @media screen and (max-width: $breakpoint-tablet) {
-      display: block;
-    }
   }
 }
 

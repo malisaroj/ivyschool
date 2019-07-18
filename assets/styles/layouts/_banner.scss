@@ -1,7 +1,7 @@
 .banner-text {
   position: absolute;
   left: 150px;
-  top: 130px;
+  top: 65px;
   z-index: 1;
 
   h2 {
@@ -38,11 +38,12 @@
     width: 50%;
     text-align: left;
     margin-bottom: 30px !important;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: $text-color;
 
     @media screen and (max-width: $breakpoint-tablet) {
       margin-bottom: 13px !important;
+      font-size: 1.3rem;
     }
 
     @media screen and (max-width: $breakpoint-phone) {
@@ -53,13 +54,13 @@
   }
 
   @media screen and (max-width: $breakpoint-desktop) {
-    left: 53px;
-    top: 84px;
+    left: 110px;
+    top: 35px;
   }
 
   @media screen and (max-width: $breakpoint-tablet) {
-    left: 53px;
-    top: 40px;
+    left: 80px;
+    top: 15px;
   }
 
   @media screen and (max-width: $breakpoint-phone) {

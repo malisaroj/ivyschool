@@ -3,6 +3,10 @@
   position: relative;
   height: 300px;
 
+  @media screen and (max-width: $breakpoint-phone) {
+    margin-top: -60px !important;
+  }
+
   .page-title-container {
     background-color: rgba(17, 17, 17, 0.75);
     height: 300px;
@@ -44,10 +48,14 @@
 
 .container {
   padding: 7rem 0;
+
+  @media screen and (max-width: $breakpoint-phone) {
+    padding: 3rem 0;
+  }
 }
 
 .about-menu {
-  padding: 7rem 0;
+  padding: 5rem 0;
   @media screen and (max-width: $breakpoint-phone) {
     padding: 0;
   }
@@ -82,13 +90,18 @@
   font-weight: 400;
   font-size: 1.6rem;
   color: $copyright-text;
-  padding: 7rem 0;
+  padding: 5rem 0;
 }
 
 .message {
   font-size: 2.5rem;
   font-weight: 600;
-  padding: 7rem 0;
+  padding: 5rem 0;
+
+  @media screen and (max-width: $breakpoint-tablet) {
+    padding-top: 0;
+    padding-bottom: 2rem;
+  }
 }
 
 #tweets {
@@ -100,28 +113,32 @@
   }
 
   .tweet-feed {
-    padding-top: 150px;
+    padding-top: 140px;
     text-align: center;
     width: 60%;
     margin: 0 auto !important;
-  
+
+    @media screen and (max-width: $breakpoint-tablet) {
+      width: 80%;
+    }
+
     @media screen and (max-width: $breakpoint-phone) {
       padding-top: 0;
     }
-  
+
     i {
       font-size: 3rem;
       padding: 3rem 0;
       color: $header-bg;
     }
-  
+
     p {
       color: $white;
       font-size: 1.8rem;
-  
+
       a {
         color: $header-bg;
-        display: inline; 
+        display: inline;
         padding-right: 0rem;
         padding-left: 0rem;
       }
@@ -168,23 +185,60 @@
 }
 
 .portfolio-container {
-  background-color: $white;
   margin: 10px !important;
-  height: 380px;
+  height: 350px;
+  position: relative;
 
   @media screen and (max-width: $breakpoint-desktop) {
-    height: 420px;
+    height: 360px;
   }
 
-  @media screen and (max-width: $breakpoint-tablet) {
-    height: 465px;
+  @media screen and (min-width: $breakpoint-desktop) {
+    &:hover {
+      .info {
+        top: 225px;
+      }
+    }
   }
-  @media screen and (max-width: $breakpoint-phone) {
-    height: 500px;
+
+  .info {
+    position: absolute;
+    top: 265px;
+    width: 100%;
+    background-color: $white;
+    transition: all 0.3s;
+
+    .name {
+      h4 {
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 400;
+        display: block;
+      }
+
+      p {
+        text-align: center;
+        color: $text-color;
+        font-size: 1.6rem;
+        font-weight: 400;
+      }
+    }
+
+    .social-link {
+      a {
+        display: inline-flex;
+        i {
+          color: $black;
+          font-size: 1.5rem;
+          padding-left: 1rem;
+        }
+      }
+    }
   }
 
   img {
     width: 100% !important;
+    transition: all 0.3s;
   }
 
   h4 {
@@ -222,7 +276,7 @@
 
   @media screen and (max-width: $breakpoint-phone) {
     left: 0px;
-    top: -970px;
+    top: -928px;
   }
 }
 
@@ -310,12 +364,19 @@
   margin: 0 auto !important;
 
   .content {
-    color: $text-color;
-    font-size: 2rem;
-    font-weight: 400;
+    padding-top: 0;
+
+    i {
+      color: $text-color;
+      font-size: 2rem;
+      font-weight: 400;
+    }
   }
 
   .author {
+    font-size: 2rem;
+    font-weight: 400;
+    padding-top: 2rem;
     span {
       color: $header-bg;
       font-size: 2rem;
@@ -326,4 +387,46 @@
 
 .custom-row {
   margin-bottom: 2rem !important;
+}
+
+#testimonial-container {
+  position: relative;
+
+  @media screen and (max-width: $breakpoint-desktop) {
+    padding-bottom: 4rem;
+
+  }
+
+  @media screen and (max-width: $breakpoint-phone) {
+    padding-bottom: 4rem;
+
+  }
+}
+
+#carousel-custom-dots {
+  position: absolute;
+  display: inline-flex;
+  top: 85%;
+  left: 41%;
+
+  .owl-dot {
+    height: 50px;
+    width: 50px;
+    color: red;
+    z-index: 99999;
+
+    img {
+      border-radius: 3rem;
+      object-fit: cover;
+      width: 100%;
+      height: auto;
+      filter: grayscale(100%);
+    }
+  }
+}
+
+.active {
+  img {
+    filter: grayscale(0);
+  }
 }
