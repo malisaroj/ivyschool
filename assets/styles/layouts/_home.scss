@@ -17,11 +17,11 @@
   }
 
   p {
-    font-weight: 300;
+    font-weight: 400;
     text-align: center;
     padding: 2rem 0;
     font-size: 1.5rem;
-    color: #a6a7a9;
+    color: $text-color;
   }
 }
 
@@ -37,7 +37,7 @@
 
   p {
     font-size: 1.5rem;
-    color: #a6a7a9;
+    color: $text-color;
   }
 }
 
@@ -59,21 +59,20 @@
   }
 
   .row {
+    align-items: center;
+
     @media screen and (max-width: $breakpoint-tablet) {
       display: block;
       text-align: center;
     }
-
     .col {
       .row {
         .col {
-          @media screen and (max-width: $breakpoint-tablet){
+          @media screen and (max-width: $breakpoint-tablet) {
             padding-bottom: 1rem;
           }
         }
-
       }
-
     }
   }
 }
@@ -135,11 +134,11 @@
   }
 
   p {
-    font-weight: 300;
+    font-weight: 400;
     text-align: left;
     text-transform: capitalize;
     font-size: 1.3rem;
-    color: #a6a7a9;
+    color: $text-color;
     padding: 5px 0;
   }
 
@@ -148,6 +147,7 @@
     text-transform: uppercase;
     text-align: left;
     font-size: 1.3rem;
+    padding-top: 1rem;
   }
 }
 
@@ -168,9 +168,14 @@
   background-color: #4f59b6;
   border-radius: 5px;
 
+  @media screen and (max-width: $breakpoint-tablet) {
+    margin-top: 2rem !important;
+
+  }
+
   h4 {
     font-weight: 600;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     color: $white;
     text-transform: capitalize;
   }
@@ -179,6 +184,7 @@
     font-weight: 300;
     color: $white;
     text-align: start;
+    font-size: 1.4rem;
   }
 
   h5 {
@@ -192,48 +198,55 @@ p {
   }
 }
 
+%background-property {
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  background-position: center;
+  background-size: 100%;
+  height: 46rem;
+}
+
 /* Feature Section */
 #feature {
   width: 80%;
-  margin: 7rem auto !important;
+  margin: 0 auto 5rem !important;
 
   @media screen and (max-width: $breakpoint-phone) {
     width: 100%;
     margin: 1rem auto !important;
   }
+
+  .row {
+    .featurecol-1 {
+      background-image: url("../../assets/img/Back4.png");
+      @extend %background-property;
+    }
+
+    .featurecol-2 {
+      background-image: url("../../assets/img/Back3.png");
+      @extend %background-property;
+    }
+
+    .featurecol-3 {
+      background-image: url("../../assets/img/Back2.png");
+      @extend %background-property;
+    }
+
+    .featurecol-4 {
+      background-image: url("../../assets/img/Back.png");
+      @extend %background-property;
+    }
+  }
 }
 
 .feature-container {
-  position: relative;
-
   @media screen and (max-width: $breakpoint-desktop) {
-    margin: 2rem 0 !important;
-  }
-
-  img {
-    width: 100%;
-    height: auto;
+    margin: 1rem 0 !important;
   }
 }
 
 .feature-text {
-  position: absolute;
-  z-index: 999;
-  top: 77px;
-  left: 0;
-
-  @media screen and (max-width: $breakpoint-desktop) {
-   top: 145px;
-  }
-
-  
-  @media screen and (max-width: $breakpoint-tablet) {
-    top: 90px;
-   }
-
-   @media screen and (max-width: $breakpoint-phone) {
-    top: 100px;
-   }
 
   h4 {
     margin: 0 auto !important;
@@ -241,13 +254,13 @@ p {
     font-size: 1.7rem;
     color: $white;
     text-align: center;
-    width: 80%;
+    width: 100%;
     display: block !important;
   }
 
   p {
     margin: 0 auto !important;
-    width: 80%;
+    width: 100%;
     color: $white;
     font-weight: 300;
     text-align: center;
@@ -278,8 +291,7 @@ p {
 }
 
 .news-text {
-  padding-left: 32px;
-  padding-right: 55px;
+  padding: 0 2rem;
 
   h4 {
     font-weight: 600;
@@ -289,7 +301,7 @@ p {
   }
 
   p {
-    font-weight: 300;
+    font-weight: 400;
     font-size: 1.3rem;
   }
 
@@ -311,7 +323,7 @@ p {
   }
 
   p {
-    font-weight: 300;
+    font-weight: 400;
     font-size: 1.3rem;
     display: block !important;
     width: 80%;

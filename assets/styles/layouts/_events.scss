@@ -20,8 +20,8 @@
   font-size: 1.6rem;
   text-transform: uppercase;
   text-align: center;
-  height: 75px;
-  width: 75px;
+  height: 90px;
+  width: 90px;
   margin: 2rem 0 !important;
 
   @media screen and (max-width: $breakpoint-phone) {
@@ -33,6 +33,8 @@
     font-weight: 600;
     color: $white;
     text-align: center;
+    padding: 0;
+    line-height: 1.2;
   }
 }
 

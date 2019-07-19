@@ -44,7 +44,7 @@ header {
   padding-top: 33px;
   display: flex;
   flex-wrap: nowrap;
-  justify-content: space-between;  
+  justify-content: space-between;
 
   @media screen and (max-width: $breakpoint-phone) {
     position: relative;
@@ -84,7 +84,7 @@ header {
   }
 
   .menu-item {
-    padding-top: 20px;
+    padding: 20px 10px;
     display: inline-flex;
 
     .closebtn {
@@ -119,6 +119,14 @@ header {
       color: #818181;
       transition: 0.3s;
     }
+    .dropdown:active {
+      .dropbtn {
+        color: $white !important;
+        i {
+          color: $white !important;
+        }
+      }
+    }
 
     .main-menu-item {
       @media screen and (max-width: $breakpoint-phone) {
@@ -137,8 +145,10 @@ header {
         }
 
         &:hover {
-          color: #f1f1f1;
-
+          background-color: rgba(0, 0, 0, 0.8) !important;
+          i {
+            color: $white !important;
+          }
         }
       }
 
@@ -161,6 +171,7 @@ header {
     @extend %color-shared;
     font-weight: 600;
     text-transform: uppercase;
+    line-height: 2;
   }
 
   span {
@@ -199,6 +210,10 @@ header {
       padding: 5px;
       text-align: center;
       border-radius: 2px;
+
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.8) !important;
+      }
     }
   }
 }
@@ -210,11 +225,6 @@ li a,
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-}
-
-li a:hover,
-.dropdown:hover .dropbtn {
-  background-color: $copyright-text;
 }
 
 li.dropdown {
@@ -236,10 +246,6 @@ li.dropdown {
   text-decoration: none;
   display: block;
   text-align: left;
-}
-
-.dropdown-content a:hover {
-  background-color: #f1f1f1;
 }
 
 .dropdown:hover .dropdown-content {
@@ -279,6 +285,8 @@ li.dropdown {
       .img-container {
         img {
           height: 580px;
+          max-width: 100%;
+          object-fit: cover;
         }
       }
     }
@@ -343,7 +351,6 @@ li.dropdown {
 
           button {
             height: 4rem;
-            border-radius: 2rem;
             font-size: 2rem;
             text-transform: uppercase;
           }

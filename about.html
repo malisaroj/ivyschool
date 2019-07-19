@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="assets/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <!-- Fancybox CSS -->
+    <link rel="stylesheet" href="assets/fancybox/dist/jquery.fancybox.min.css">
     <!-- Style CSS -->
     <link rel="stylesheet" href="assets/styles/style.css">
 </head>
@@ -52,7 +54,7 @@
                                 </div>
                                 <div class="call-mail-menu">
                                     <span>
-                                        <p>call us</p> <br>
+                                        <p>call us</p>
                                         977 9849451411
                                     </span>
         
@@ -66,7 +68,7 @@
                                 </div>
                                 <div class="call-mail-menu">
                                     <span>
-                                        <p>email</p> <br>
+                                        <p>email</p>
                                         infoemail@gmail.com
                                     </span>
                                 </div>
@@ -268,7 +270,7 @@
     <section id="about-wrapper">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-lg-4 col-md-4">
+                <div class="col-12 col-lg-3 col-md-4">
                     <ul class="about-menu">
                         <li class="about-menu-item"><a href="#">History</a></li>
                         <li class="about-menu-item"><a href="#">Administration</a></li>
@@ -279,7 +281,7 @@
                     </ul>
                 </div>
 
-                <div class="col-12 col-lg-4 col-md-8">
+                <div class="col-12 col-lg-5 col-md-8">
                     <p class="about-text">
                         Smart University is devoted to excellence in teaching, learning, and research, and to developing
                         leaders in many disciplines who make a difference Accepts applications from prospective Note
@@ -304,35 +306,44 @@
             </div>
         </div>
 
-        <div class="container">
+        <div class="container gallery-container">
             <div class="row">
-                <div class="col-12 col-lg-6 col-md-6  lg-img-container">
-                    <img src="assets/img/bg-15.jpg" alt="">
+                <div class="col-12 col-lg-6 col-md-6  lg-img-container  custom-row">
+                    <a data-fancybox="gallery" data-caption="caption #1" href="assets/img/bg-15.jpg"><img src="assets/img/bg-15.jpg" alt="">
+                    </a>
                 </div>
                 <div class="col-12 col-lg-6 col-md-6">
                     <div class="row custom-row">
                         <div class="col-4 col-lg-4 col-md-4 img-container">
-                            <img src="assets/img/bg-14.jpg" alt="">
-                        </div>
-                        <div class="col-4 col-lg-4 col-md-4 img-container">
-                            <img src="assets/img/event-02.jpg" alt="">
+                            <a data-fancybox="gallery" data-caption="caption #2" href="assets/img/bg-14.jpg"><img src="assets/img/bg-14.jpg" alt="">
+                            </a>
 
                         </div>
                         <div class="col-4 col-lg-4 col-md-4 img-container">
-                            <img src="assets/img/fdd11314-86ab-4a74-847a-4dbe249849fa_xl.jpg" alt="">
+                            <a data-fancybox="gallery" data-caption="caption #3" href="assets/img/event-02.jpg"><img src="assets/img/event-02.jpg"
+                                    alt=""> </a>
 
+                        </div>
+                        <div class="col-4 col-lg-4 col-md-4 img-container">
+                            <a data-fancybox="gallery" data-caption="caption #4" href="assets/img/fdd11314-86ab-4a74-847a-4dbe249849fa_xl.jpg"><img
+                                    src="assets/img/fdd11314-86ab-4a74-847a-4dbe249849fa_xl.jpg" alt=""> </a>
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="col-4 col-lg-4 col-md-4 img-container">
-                            <img src="assets/img/gallery-2-2.png" alt="">
+                            <a data-fancybox="gallery" data-caption="caption #5" href="assets/img/gallery-2-2.png"><img
+                                    src="assets/img/gallery-2-2.png" alt=""> </a>
+
                         </div>
                         <div class="col-4 col-lg-4 col-md-4 img-container">
-                            <img src="assets/img/ssdh-sinh-vien-14-e1521946238924-1.jpg" alt="">
+                            <a data-fancybox="gallery" data-caption="caption #6" href="assets/img/ssdh-sinh-vien-14-e1521946238924-1.jpg"><img
+                                    src="assets/img/ssdh-sinh-vien-14-e1521946238924-1.jpg" alt=""> </a>
+
                         </div>
                         <div class="col-4 col-lg-4 col-md-4 img-container">
-                            <img src="assets/img/ssdh-sinh-vien-14-e1521946238924-1.jpg" alt="">
+                            <a data-fancybox="gallery" data-caption="caption #7" href="assets/img/ssdh-sinh-vien-14-e1521946238924-1.jpg"><img
+                                    src="assets/img/ssdh-sinh-vien-14-e1521946238924-1.jpg" alt=""> </a>
                         </div>
                     </div>
 
@@ -653,7 +664,7 @@
                 </div>
             </div>
 
-            <!--             <ul id='carousel-custom-dots' class='owl-dots'>
+            <!--<ul id='carousel-custom-dots' class='owl-dots'>
                 <li class='owl-dot'><img src="assets/img/2448c53ace919662a2b977d2be3a47c5.jpg" alt=""></li>
                 <li class='owl-dot'><img src="assets/img/30367d731fe04b6a121246c51556b2c0.jpg" alt=""></li>
                 <li class='owl-dot'><img src="assets/img/38c67bf43c027a34f44b9ad60ea0263f.jpg" alt=""></li>
@@ -669,15 +680,20 @@
             <div class="row">
                 <div class="col icon-box" style="background-color: #31335d">
                     <img src="assets/img/icon-box-04.png" alt="">
-                    <h2>Undergraduate Admissions</h2>
+                    <h2>Undergraduate</h2>
+                    <h6>Admissions</h6>
                 </div>
                 <div class="col icon-box" style="background-color: #4a4e8e">
                     <img src="assets/img/icon-box-05.png" alt="">
-                    <h2>Undergraduate Admissions</h2>
+                    <h2>Undergraduate</h2>
+                    <h6>Admissions</h6>
+
                 </div>
                 <div class="col icon-box" style="background-color: #31335d">
                     <img src="assets/img/icon-box-06.png" alt="">
-                    <h2>Undergraduate Admissions</h2>
+                    <h2>Undergraduate</h2>
+                    <h6>Admissions</h6>
+
                 </div>
             </div>
         </div>
@@ -722,7 +738,7 @@
                 <div class="row">
                     <div class="col-6">
                         <ul>
-                            <li class="footer-menu"><a href="#">home</a></li>
+                            <li class="footer-menu"><a href="index.html">home</a></li>
                             <li class="footer-menu"><a href="events.html">events</a></li>
                             <li class="footer-menu"><a href="#">news</a></li>
                             <li class="footer-menu"><a href="#">admission</a></li>
@@ -785,8 +801,10 @@
     </footer>
 
     <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/popper.js"></script>
     <script src="assets/bootstrap/js/bootstrap.js"></script>
     <script src="assets/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="assets/fancybox/dist/jquery.fancybox.min.js"></script>
     <script src="assets/js/main.js"></script>
 
 </body>

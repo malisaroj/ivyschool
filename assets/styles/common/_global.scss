@@ -44,10 +44,8 @@ h6 {
 }
 
 li a:hover, .dropdown:hover .dropbtn {
-
-  background-color: rgba(0, 0 , 0, 0.5) !important;
-  color: $white !important;
-
+  background-color: rgba(0, 0 , 0, 0.8) !important;
+  color: $white;
 }
 
 .main-menu .menu-item .main-menu-item a:hover {
