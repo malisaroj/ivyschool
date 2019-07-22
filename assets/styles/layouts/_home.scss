@@ -170,7 +170,6 @@
 
   @media screen and (max-width: $breakpoint-tablet) {
     margin-top: 4rem !important;
-
   }
 
   h4 {
@@ -247,7 +246,6 @@ p {
 }
 
 .feature-text {
-
   h4 {
     margin: 0 auto !important;
     font-weight: 600;
@@ -265,6 +263,7 @@ p {
     font-weight: 300;
     text-align: center;
     font-size: 1.5rem;
+    padding: 0 3rem;
   }
 }
 
@@ -356,9 +355,15 @@ p {
 }
 
 .testimonial-text {
+  margin: 0 2rem !important;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
   padding: 3rem;
   background-color: $testimonial-bg;
   border-radius: 5px;
+  display: flex;
 
   p {
     color: $white;
@@ -375,9 +380,5 @@ p {
     padding-top: 30px;
     padding-left: 0;
     padding-bottom: 0;
-  }
-
-  @media screen and (max-width: $breakpoint-desktop) {
-    margin: 3rem 0 !important;
   }
 }

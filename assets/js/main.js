@@ -165,6 +165,31 @@ jQuery(document).ready(function () {
         dotsContainer: '#carousel-custom-dots',
 
     });
+
+    jQuery('#testimonial-slider').owlCarousel({
+        loop: true,
+        nav: false,
+        smartSpeed: 450,
+        autoplay: true,
+        autoplayTimeout: 8000,
+        autoplayHoverPause: true,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 1,
+                nav: false
+            },
+            1024: {
+                items: 2,
+                nav: false
+            },
+
+            1366: {
+                items: 3,
+                nav: false
+            }
+        }
+    });
     jQuery('.owl-dot').click(function () {
         owl.trigger('to.owl.carousel', [$(this).index(), 300]);
     });
