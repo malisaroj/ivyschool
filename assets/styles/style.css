@@ -955,8 +955,18 @@ html body {
   }
 }
 
-.owl-dots {
+#banner .owl-dots {
   display: none;
+}
+
+.banner-container {
+  padding-left: 0;
+  width: 80%;
+}
+@media screen and (max-width: 576px) {
+  .banner-container {
+    width: 100%;
+  }
 }
 
 #about-header {
@@ -1205,24 +1215,14 @@ html body {
 
 .icon-container {
   position: absolute;
-  left: 100px;
-  top: -228px;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%);
   z-index: 999;
-}
-@media screen and (max-width: 1024px) {
-  .icon-container {
-    left: 33px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .icon-container {
-    left: 25px;
-  }
 }
 @media screen and (max-width: 576px) {
   .icon-container {
-    left: 0px;
-    top: -928px;
+    top: 30px;
   }
 }
 

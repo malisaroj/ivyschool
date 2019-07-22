@@ -16,7 +16,16 @@ jQuery(document).ready(function () {
         $(".mobile-nav").css("display", "block");
     });
 
+    //Center the Login and Register modal 
+    jQuery.fn.center = function () {
+        this.css("position", "fixed");
+        this.css("top", ($(window).height() / 2 - this.height() / 2) + "px");
+        this.css("left", ($(window).width() / 2 - this.width() / 2) + "px");
+        return this;
+    }
+
     jQuery(".login").click(function () {
+        $(".card").center();
         $(".card").css("display", "block");
     });
 
@@ -33,6 +42,7 @@ jQuery(document).ready(function () {
     jQuery(".search").click(function () {
         $('#search').css("width", "100%");
     });
+
 
     jQuery('#owl-banner').owlCarousel({
         loop: true,
@@ -208,4 +218,6 @@ jQuery(document).ready(function () {
             }
         }
     });
+
+
 });
