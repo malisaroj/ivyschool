@@ -45,7 +45,7 @@ li a:hover, .dropdown:hover .dropbtn {
 
 .about-container {
   margin: 0 auto !important;
-  width: 80%; }
+  width: 50%; }
   .about-container h4 {
     font-weight: 600;
     font-size: 4rem;
@@ -54,11 +54,12 @@ li a:hover, .dropdown:hover .dropbtn {
     display: block !important;
     padding-top: 6rem; }
   .about-container p {
-    font-weight: 400;
+    font-weight: 100;
     text-align: center;
     padding: 2rem 0;
     font-size: 1.5rem;
-    color: #777777; }
+    color: #777777;
+    line-height: 2.8rem; }
 
 .signe {
   text-align: center;
@@ -649,7 +650,9 @@ footer {
     .footer-side {
       display: none; } }
   .footer-side .contact-info {
-    padding-left: 85px; }
+    display: flex;
+    justify-content: center;
+    align-items: center; }
 
 #logo-school {
   height: auto;
