@@ -412,10 +412,14 @@ p span {
 header {
   height: 250px;
 }
+@media screen and (max-width: 576px) {
+  header {
+    height: 205px;
+  }
+}
 
 .top-menu-container {
   background-color: #40489d;
-  height: 60px;
 }
 @media screen and (max-width: 576px) {
   .top-menu-container {
@@ -434,7 +438,7 @@ header {
 
 .logo-container {
   background-color: #414aa9;
-  height: 190px;
+  height: 205px;
 }
 
 .logo-section {
@@ -1121,12 +1125,25 @@ html body {
   text-align: center;
   padding: 50px 0;
 }
+.icon-box div {
+  height: 70px;
+}
 .icon-box h2 {
   color: #fff;
   font-weight: 700;
   font-size: 2.5rem;
   text-transform: uppercase;
   padding-top: 3rem;
+}
+@media screen and (max-width: 768px) {
+  .icon-box h2 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .icon-box h2 {
+    font-size: 1.8rem;
+  }
 }
 .icon-box h6 {
   color: #fff;
@@ -1222,7 +1239,12 @@ html body {
 }
 @media screen and (max-width: 576px) {
   .icon-container {
-    top: 30px;
+    top: -450px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .icon-container .row {
+    display: block;
   }
 }
 

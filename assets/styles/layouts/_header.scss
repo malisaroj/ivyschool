@@ -7,11 +7,13 @@
 
 header {
   height: 250px;
+  @media screen and (max-width: $breakpoint-phone) {
+    height: 205px;
+  }
 }
 
 .top-menu-container {
   background-color: $top-menu-bg;
-  height: 60px;
 
   @media screen and (max-width: $breakpoint-phone) {
     display: none;
@@ -33,7 +35,7 @@ header {
 
 .logo-container {
   background-color: $header-bg;
-  height: 190px;
+  height: 205px;
 }
 
 .logo-section {
