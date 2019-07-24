@@ -845,7 +845,7 @@ html {
 
 .message {
   font-size: 2.5rem;
-  font-weight: 600;
+  font-weight: 100;
   padding: 5rem 0; }
   @media screen and (max-width: 768px) {
     .message {
@@ -909,7 +909,6 @@ html {
     font-weight: 400;
     font-size: 2rem;
     text-transform: uppercase;
-    padding-top: 3rem;
     text-align: center; }
 
 #portfolio {
