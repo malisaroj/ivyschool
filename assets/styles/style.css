@@ -64,7 +64,7 @@ li a:hover, .dropdown:hover .dropbtn {
 
 .signe {
   text-align: center;
-  padding: 5rem 0; }
+  padding: 5rem 0 0; }
   .signe h6 {
     text-transform: capitalize;
     font-size: 2rem;
@@ -451,7 +451,8 @@ header {
   .call-mail-menu p {
     font-weight: 600;
     text-transform: uppercase;
-    line-height: 2; }
+    line-height: 2;
+    margin: 0; }
   .call-mail-menu span {
     color: #fff;
     text-transform: lowercase;
@@ -917,13 +918,12 @@ html {
 #portfolio {
   background-color: rgba(17, 17, 17, 0.75);
   z-index: 999;
-  padding-top: 7rem; }
+  padding: 7rem 0; }
   #portfolio h2 {
     color: #fff;
     text-align: center;
     font-weight: 700;
-    font-size: 4rem;
-    padding-top: 7rem; }
+    font-size: 4rem; }
 
 .portfolio-img {
   width: 250px !important; }
