@@ -5,7 +5,6 @@
   background-attachment: fixed;
   @media screen and (max-width: $breakpoint-desktop) {
     margin: -20px 0 !important;
-
   }
 
   .feature-container {
@@ -15,17 +14,13 @@
 }
 
 #faq {
+  margin: 8rem 0 0;
   background-image: url("../../assets/img/Landing-Page.png");
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: 50% 0;
 
   @media screen and (max-width: $breakpoint-tablet) {
-    padding-top: 700px;
     background-image: none;
-  }
-
-  @media screen and (max-width: $breakpoint-phone) {
-    padding-top: 950px;
   }
 
   div {
@@ -82,43 +77,16 @@
   background-image: url("../../assets/img/bg-13.jpg");
   background-repeat: no-repeat;
   background-position: 50% top;
-  position: relative;
-
-  @media screen and (max-width: $breakpoint-desktop) {
-    height: 800px;
-  }
-
-  @media screen and (max-width: $breakpoint-tablet) {
-    background-position: 0 0;
-  }
-
-  @media screen and (max-width: $breakpoint-phone) {
-    background-position: center;
-  }
 
   div {
     .form-wrap {
       padding: 38px 25px;
       background: #fff;
       background-size: auto;
-      width: 530px;
-      max-width: 100%;
       display: inline-block;
       z-index: 1;
       border: #615859 solid 5px;
       border-radius: 5px;
-
-      @media screen and (max-width: $breakpoint-desktop) {
-        position: absolute;
-        top: 23px;
-        left: 459px;
-      }
-
-      @media screen and (max-width: $breakpoint-tablet) {
-        top: 800px;
-        left: 0px;
-        width: 100%;
-      }
 
       h4 {
         font-size: 3rem;
@@ -204,20 +172,23 @@
   padding-left: 0;
 }
 
+.info-wrapper {
+  display: flex;
+  align-items: flex-end;
+
+  @media screen and (max-width: $breakpoint-tablet) {
+    padding-top: 2rem;
+  }
+}
+
 .title {
   color: $secondary-text-color;
   line-height: 2.8rem;
   font-size: 1.8rem;
   font-weight: 300;
   text-transform: none;
-  position: absolute;
-  bottom: 0;
-  padding-bottom: 7rem;
   text-align: center;
-
-  @media screen and (max-width: $breakpoint-desktop) {
-    bottom: -600px;
-  }
+  padding-bottom: 8rem;
 
   h1 {
     color: $white;
@@ -303,7 +274,6 @@
 
   @media screen and (max-width: $breakpoint-phone) {
     padding-bottom: 420px;
-
   }
 
   .custom-bg {
@@ -340,8 +310,10 @@
     left: 50%;
     top: 100%;
     transform: translate(-50%, -100%);
+    padding-bottom: 8rem;
 
     .row {
+
       .owl-carousel {
         position: relative;
 
@@ -354,14 +326,17 @@
         .owl-nav i {
           font-size: 52px;
           color: $black;
-
         }
         .owl-nav .owl-prev {
-          left: -30px;
+          left: -60px;
         }
 
         .owl-nav .owl-next {
-          right: -30px;
+          right: -60px;
+        }
+
+        .owl-dots {
+          display: none;
         }
 
         .portfolio-container {
@@ -370,10 +345,13 @@
           border: 1px solid #ced4da;
           height: 450px;
 
-          @media screen and (max-width: $breakpoint-desktop) {
-            height: 470px;
+          @media screen and (max-width: $breakpoint-phone) {
+            height: 460px;
           }
 
+          @media screen and (max-width: 420px) {
+            height: 500px;
+          }
 
           h4 {
             font-size: 2rem;
@@ -399,6 +377,8 @@
             font-weight: 600;
             font-size: 1.5rem;
             text-align: left;
+            padding-left: 1rem;
+            padding-top: 1rem;
           }
 
           .content-details {
@@ -427,10 +407,8 @@
 #partners {
   background-color: #0073bb;
   height: 200px;
-
-  @media screen and (max-width: $breakpoint-desktop) {
-    height: auto;
-  }
+  display: flex;
+  align-items: center;
 
   .container {
     .row {

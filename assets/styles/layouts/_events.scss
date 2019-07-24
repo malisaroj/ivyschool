@@ -98,28 +98,13 @@
 .event-container {
   background-color: $white;
   text-align: center;
-
-  @media screen and (max-width: $breakpoint-desktop) {
-    top: 250px;
-    left: 3px;
-  }
-
-  @media screen and (max-width: $breakpoint-tablet) {
-    top: 180px;
-    left: 0px;
-  }
-
-  @media screen and (max-width: $breakpoint-phone) {
-    top: 128px;
-  }
-
-  @media screen and (max-width: 360px) {
-    top: 114px;
-  }
+  width: 100%;
 
   .title-event {
+    display: flex;
+    justify-content: center;
+
     a {
-      display: flex;
       padding: 2rem;
       h4 {
         font-weight: 400;

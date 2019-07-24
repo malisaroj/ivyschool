@@ -6,17 +6,15 @@
 
 .contact-details {
   text-align: center;
+  padding: 8rem 0 0;
+
 
   @media screen and (max-width: $breakpoint-phone) {
-    padding-bottom: 7rem;
+    padding: 5rem 0 0;
   }
 
   .content {
-    padding-top: 5rem;
-
-    @media screen and (max-width: $breakpoint-phone) {
-      padding-top: 0;
-    }
+    padding-top: 0;
 
     h4 {
       font-size: 2rem;
@@ -34,6 +32,12 @@
 }
 
 #form {
+  padding: 8rem 0 0;
+
+  .custom-col {
+    padding-bottom: 30px;
+  }
+
   div {
     h2 {
       font-weight: 600;
@@ -96,8 +100,4 @@ form {
 .custom-btn {
   width: 203px;
   height: auto;
-
-  a {
-    font-size: 1.4rem !important;
-  }
 }
