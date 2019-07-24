@@ -41,7 +41,8 @@ li a:hover, .dropdown:hover .dropbtn {
 
 /* About Section */
 #about {
-  background-color: #edeef3; }
+  background-color: #edeef3;
+  padding: 80px 0; }
 
 .about-container {
   margin: 0 auto !important;
@@ -704,7 +705,7 @@ footer {
   font-size: 3rem; }
 
 * {
-  margin: 0 !important;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none; }
@@ -724,7 +725,8 @@ html {
 .cover {
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  padding: 120px 0; }
 
 .owl-slide-highlight {
   font-weight: normal;
@@ -1130,19 +1132,24 @@ html {
   font-size: 1.6rem;
   text-transform: uppercase;
   text-align: center;
-  height: 90px;
-  width: 90px;
+  padding: 15px;
   margin: 2rem 0 !important; }
   @media screen and (max-width: 576px) {
     .date-event {
       font-size: 1.2rem; } }
   .date-event span {
-    font-size: 3.7rem;
+    font-size: 2.7rem;
     font-weight: 600;
     color: #fff;
     text-align: center;
     padding: 0;
     line-height: 1.2; }
+    .date-event span.month {
+      font-weight: 100;
+      font-size: 1.3rem;
+      display: block; }
+    .date-event span.year {
+      font-size: 1.8rem; }
 
 .meta-event span {
   color: #777777;
@@ -1175,12 +1182,9 @@ html {
     padding: 0; }
 
 .thumbnail-container {
-  position: relative; }
+  padding: 60px 0; }
 
 .event-container {
-  position: absolute;
-  top: 340px;
-  left: 100px;
   background-color: #fff;
   text-align: center; }
   @media screen and (max-width: 1024px) {
@@ -1217,6 +1221,9 @@ html {
 
 .custom-col {
   padding-bottom: 40px; }
+
+.entry-thumbnail a {
+  padding: 0 !important; }
 
 .description {
   color: #777777;

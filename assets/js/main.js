@@ -98,6 +98,7 @@ jQuery(document).ready(function () {
         loop: true,
         nav: false,
         items: 4,
+        dots: false,
         smartSpeed: 450,
         autoplay: true,
         autoplayTimeout: 8000,
