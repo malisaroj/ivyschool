@@ -785,9 +785,7 @@ html {
   #about-header .page-title-container {
     background-color: rgba(17, 17, 17, 0.75);
     height: 300px;
-    width: 100%;
-    display: flex;
-    align-items: center; }
+    width: 100%; }
 
 .menu-container .container {
   padding: 1rem !important; }
@@ -815,7 +813,7 @@ html {
       padding: 3rem 0; } }
 
 .about-menu {
-  padding: 8rem 0 0; }
+  padding: 5rem 0; }
   @media screen and (max-width: 576px) {
     .about-menu {
       padding: 0; } }
@@ -839,18 +837,16 @@ html {
   font-weight: 400;
   font-size: 1.6rem;
   color: #878788;
-  padding: 8rem 0 0; }
+  padding: 5rem 0; }
 
 .message {
   font-size: 2.5rem;
   font-weight: 100;
-  padding: 8rem 0 3rem; }
+  padding: 5rem 0; }
   @media screen and (max-width: 768px) {
     .message {
       padding-top: 0;
       padding-bottom: 2rem; } }
-  .message strong {
-    font-weight: 600; }
 
 #tweets {
   background-image: url("../../assets/img/backgorund-twiteer_min.jpg");
@@ -877,11 +873,10 @@ html {
       color: #fff;
       font-size: 1.8rem; }
       #tweets .tweet-feed p a {
-        color: #fff;
+        color: #414aa9;
         display: inline;
         padding-right: 0rem;
-        padding-left: 0rem;
-        font-weight: 600; }
+        padding-left: 0rem; }
   #tweets .tweet-container {
     background-color: rgba(17, 17, 17, 0.75);
     height: 400px;
@@ -928,39 +923,34 @@ html {
 
 .portfolio-container {
   margin: 10px !important;
-  height: 315px;
+  height: 350px;
   position: relative; }
   @media screen and (min-width: 1024px) {
     .portfolio-container:hover .info {
-      top: 195px; } }
+      top: 225px; } }
   .portfolio-container .info {
     position: absolute;
-    top: 255px;
+    top: 265px;
     width: 100%;
     background-color: #fff;
     transition: all 0.3s; }
     .portfolio-container .info .name h4 {
       text-align: center;
-      font-size: 1.6rem;
-      font-weight: 600;
+      font-size: 2rem;
+      font-weight: 400;
       display: block;
-      padding-bottom: .1rem; }
+      padding-bottom: 1rem; }
     .portfolio-container .info .name p {
       text-align: center;
       color: #777777;
       font-size: 1.6rem;
       font-weight: 400; }
-    .portfolio-container .info .social-link {
-      margin-top: 15px !important;
-      padding-top: 10px;
-      border-top: 1px solid #eee; }
-      .portfolio-container .info .social-link a {
-        display: inline-flex;
-        padding: 10px 15px 20px; }
-        .portfolio-container .info .social-link a i {
-          color: #000;
-          font-size: 1.5rem;
-          padding-left: 1rem; }
+    .portfolio-container .info .social-link a {
+      display: inline-flex; }
+      .portfolio-container .info .social-link a i {
+        color: #000;
+        font-size: 1.5rem;
+        padding-left: 1rem; }
   .portfolio-container img {
     width: 100% !important;
     transition: all 0.3s; }
@@ -992,8 +982,7 @@ html {
       display: block; } }
 
 .counter-box {
-  text-align: center;
-  padding-bottom: 80px; }
+  text-align: center; }
   @media screen and (max-width: 576px) {
     .counter-box {
       padding-bottom: 5rem; } }
@@ -1008,9 +997,7 @@ html {
   .counter-box h6 {
     font-size: 1.6rem;
     font-weight: 400;
-    padding: 1rem 0;
-    font-weight: 600;
-    text-transform: uppercase; }
+    padding: 1rem 0; }
   .counter-box p {
     font-size: 1.6rem;
     font-weight: 400;
@@ -1030,14 +1017,6 @@ html {
     text-transform: capitalize;
     color: #000;
     text-align: center; }
-  #certificate-carousel .certi {
-    margin: 10px !important;
-    padding: 20px;
-    background: #fff;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06); }
-
-.heading-section {
-  margin-bottom: 80px !important; }
 
 .img-container a {
   padding: 0;
@@ -1109,7 +1088,7 @@ html {
   filter: grayscale(0); }
 
 .gallery-container {
-  padding: 80px 0; }
+  padding-bottom: 0; }
 
 .entry-thumbanil {
   height: 200px;
@@ -1607,4 +1586,4 @@ form {
       .btn a {
         font-size: 1rem; } }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.css.map */

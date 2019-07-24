@@ -130,6 +130,7 @@ jQuery(document).ready(function () {
         nav: false,
         items: 3,
         smartSpeed: 450,
+        dots: false,
         autoplay: true,
         autoplayTimeout: 8000,
         autoplayHoverPause: true,
@@ -155,6 +156,7 @@ jQuery(document).ready(function () {
     jQuery('#tweet').owlCarousel({
         loop: true,
         nav: false,
+        dots: false,
         items: 1,
         smartSpeed: 450,
         autoplay: true,

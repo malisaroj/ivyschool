@@ -11,6 +11,8 @@
     background-color: rgba(17, 17, 17, 0.75);
     height: 300px;
     width: 100%;
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -21,9 +23,6 @@
 }
 
 .page-title {
-  position: absolute;
-  top: 150px;
-  left: 170px;
 
   @media screen and (max-width: $breakpoint-phone) {
     text-align: center;
@@ -35,27 +34,26 @@
     color: $white;
     font-weight: 600;
     font-size: 4rem;
-    padding-bottom: 2rem;
+    padding-bottom: 0rem;
   }
 
   p {
     color: $white;
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 1.4rem;
     text-transform: uppercase;
   }
 }
 
 .container {
-  padding: 7rem 0;
-
+  padding: 0 15px;
   @media screen and (max-width: $breakpoint-phone) {
     padding: 3rem 0;
   }
 }
 
 .about-menu {
-  padding: 5rem 0;
+  padding: 8rem 0 0;
   @media screen and (max-width: $breakpoint-phone) {
     padding: 0;
   }
@@ -90,17 +88,21 @@
   font-weight: 400;
   font-size: 1.6rem;
   color: $copyright-text;
-  padding: 5rem 0;
+  padding: 8rem 0 0;
 }
 
 .message {
   font-size: 2.5rem;
   font-weight: 100;
-  padding: 5rem 0;
+  padding: 8rem 0 3rem;
 
   @media screen and (max-width: $breakpoint-tablet) {
     padding-top: 0;
     padding-bottom: 2rem;
+  }
+
+  strong {
+    font-weight: 600;
   }
 }
 
@@ -137,10 +139,11 @@
       font-size: 1.8rem;
 
       a {
-        color: $header-bg;
+        color: $white;
         display: inline;
         padding-right: 0rem;
         padding-left: 0rem;
+        font-weight: 600;
       }
     }
   }
@@ -168,11 +171,11 @@
     text-transform: uppercase;
     padding-top: 3rem;
 
-    @media screen  and (max-width: $breakpoint-tablet){
+    @media screen and (max-width: $breakpoint-tablet) {
       font-size: 2rem;
     }
 
-    @media screen  and (max-width: $breakpoint-phone){
+    @media screen and (max-width: $breakpoint-phone) {
       font-size: 1.8rem;
     }
   }
@@ -206,20 +209,20 @@
 
 .portfolio-container {
   margin: 10px !important;
-  height: 350px;
+  height: 315px;
   position: relative;
 
   @media screen and (min-width: $breakpoint-desktop) {
     &:hover {
       .info {
-        top: 225px;
+        top: 195px;
       }
     }
   }
 
   .info {
     position: absolute;
-    top: 265px;
+    top: 255px;
     width: 100%;
     background-color: $white;
     transition: all 0.3s;
@@ -227,10 +230,10 @@
     .name {
       h4 {
         text-align: center;
-        font-size: 2rem;
-        font-weight: 400;
+        font-size: 1.6rem;
+        font-weight: 600;
         display: block;
-        padding-bottom: 1rem;
+        padding-bottom: .1rem;
       }
 
       p {
@@ -242,8 +245,14 @@
     }
 
     .social-link {
+      margin-top: 15px !important;
+      padding-top: 10px;
+      border-top: 1px solid #eee;
+
       a {
         display: inline-flex;
+        padding: 10px 15px 20px;
+
         i {
           color: $black;
           font-size: 1.5rem;
@@ -292,12 +301,13 @@
     @media screen and (max-width: 575px) {
       display: block;
     }
-  
+
   }
 }
 
 .counter-box {
   text-align: center;
+  padding-bottom: 80px;
 
   @media screen and (max-width: $breakpoint-phone) {
     padding-bottom: 5rem;
@@ -317,6 +327,8 @@
     font-size: 1.6rem;
     font-weight: 400;
     padding: 1rem 0;
+    font-weight: 600;
+    text-transform: uppercase;
   }
 
   p {
@@ -344,13 +356,22 @@
     color: $black;
     text-align: center;
   }
+  .certi {
+    margin: 10px !important;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 2px rgba(0,0,0,0.06);
+  }
 }
-
+.heading-section {
+  margin-bottom: 80px !important;
+}
 .img-container {
   a {
     padding: 0;
     height: 185px;
     width: 100%;
+
     img {
       max-width: 100%;
       max-height: 100%;
@@ -392,6 +413,7 @@
     font-size: 2rem;
     font-weight: 400;
     padding-top: 2rem;
+
     span {
       color: $header-bg;
       font-size: 2rem;
@@ -445,5 +467,5 @@
 }
 
 .gallery-container {
-  padding-bottom: 0;
+  padding: 80px 0;
 }
